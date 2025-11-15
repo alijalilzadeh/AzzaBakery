@@ -34,13 +34,69 @@ body {
   height: 100%;
 }
 
+.hamburgerSidebar{
+  transform: translateX(-300px);
+  position: fixed;
+  max-width: 320px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: var(--navbar-background);
+  transition: all .4s;
+}
+
+.hamburgerSidebar.opening{
+  transform: translateX(0);
+  transition: all .4s;
+}
+
+.hamburgerSidebar.closing{
+  transform: translateX(-300px);
+  transition: all .4s;
+}
+
+.hamburgerBox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 20px 40px;
+
+}
+
+.hamburgerBox .upper-part{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.hamburgerBox .upper-part i{
+ cursor: pointer;
+ color: var(--brown-color);
+ font-size: 30px;
+}
+
+.hamburgerBox .sections-part{
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+}
+
+.hamburgerBox .sections-part a{
+color: var(--brown-color);
+font-weight: 700;
+font-size: 16px;
+}
+
+
 .navbar-part .icon-path{
   fill: var(--brown-color) !important;
 }
 
 .navbar-part svg:hover .icon-path{
   fill: var(--light-yellow) !important;
-
 }
 
 .navbar-part {

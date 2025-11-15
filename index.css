@@ -4,7 +4,7 @@
   --border-yellow: #F9AF19;
   --navbar-background: #F7F7F7;
   --brown-color: #4B2613;
-  --link-icons:#302215;
+  --link-icons: #302215;
 }
 
 * {
@@ -29,13 +29,17 @@ a {
   position: absolute;
 }
 
-.hamburgerSidebar .icon-path{
+.hamburgerSidebar .icon-path {
   fill: var(--brown-color) !important;
 }
 
-.hamburgerSidebar svg:hover .icon-path{
+.hamburgerSidebar svg:hover .icon-path {
   fill: var(--light-yellow) !important;
 
+}
+
+.interier-view .navbar-left a {
+  display: none;
 }
 
 /* 
@@ -63,7 +67,7 @@ a {
     </div>
 */
 
-.hamburgerSidebar{
+.hamburgerSidebar {
   transform: translateX(-300px);
   position: fixed;
   max-width: 320px;
@@ -75,17 +79,17 @@ a {
   transition: all .4s;
 }
 
-.hamburgerSidebar.opening{
+.hamburgerSidebar.opening {
   transform: translateX(0);
   transition: all .4s;
 }
 
-.hamburgerSidebar.closing{
+.hamburgerSidebar.closing {
   transform: translateX(-300px);
   transition: all .4s;
 }
 
-.hamburgerBox{
+.hamburgerBox {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -94,33 +98,42 @@ a {
 
 }
 
-.hamburgerBox .upper-part{
+.hamburgerBox .upper-part {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
 }
 
-.hamburgerBox .upper-part i{
- cursor: pointer;
- color: var(--brown-color);
- font-size: 30px;
+.hamburgerBox .upper-part i {
+  cursor: pointer;
+  color: var(--brown-color);
+  font-size: 30px;
 }
 
-.hamburgerBox .sections-part{
-display: flex;
-flex-direction: column;
-gap: 1.5rem;
+.hamburgerBox .sections-part {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.hamburgerBox .sections-part a{
-color: var(--brown-color);
-font-weight: 700;
-font-size: 16px;
+.hamburgerBox .sections-part a {
+  color: var(--brown-color);
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .navbar-box {
   padding: 1rem;
+}
+
+.navbar-box.fixed {
+  background-color: var(--navbar-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
 }
 
 .navbar-part {
@@ -154,6 +167,16 @@ font-size: 16px;
   background-color: var(--light-yellow);
   color: #000;
   outline: none;
+}
+
+.navbar-left .language-selection span.scroll {
+  transition: all .4s;
+  color: var(--brown-color);
+}
+
+.navbar-left .language-selection span.scroll:hover {
+  background-color: var(--light-yellow);
+  color: #000;
 }
 
 .interier-view {
@@ -265,7 +288,7 @@ span i:not(.fa-circle) {
 span .fa-arrow-down {
   width: 30px;
   height: 30px;
-  background-color:var(--light-yellow);
+  background-color: var(--light-yellow);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -522,15 +545,48 @@ section#newsFromAzza {
 }
 
 .newsProductBox {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: .6rem;
   width: 100%;
   height: 100%;
+  padding: 10px 0;
+}
+
+.newsProductBox a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: wrap;
+  padding: 20px 10px;
+  width: 110px;
+  height: 100px;
+  background-color: rgba(244, 234, 185, .95);
+  z-index: 20;
+  color: var(--brown-color);
+  font-size: 12px;
+  font-weight: 600;
+  transition: all .4s;
+}
+
+.newsProductBox:hover a{
+  opacity: 1;
+}
+
+.newsProductBox a:hover {
+  color: #666666;
 }
 
 .newsProductBox .img-part {
+  position: relative;
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
@@ -581,7 +637,7 @@ section#footer .upper-part span {
 
 .footer-part {
   display: flex;
-  gap:12rem;
+  gap: 12rem;
   padding: 40px 0;
 }
 
