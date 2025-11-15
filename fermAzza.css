@@ -16,7 +16,7 @@
 html {
   scroll-behavior: smooth;
   scroll-margin-top: 100px;
-  background: url(logoImagescopy/fermAzzaBanner.png) center/cover no-repeat fixed;
+  background: url(fermAzzaWebPage/logoImagescopy/fermAzzaBanner.png) center/cover no-repeat fixed;
 }
 
 a {
