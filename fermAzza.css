@@ -29,11 +29,18 @@ body {
 
 }
 
-
-
 .container {
   width: 100%;
   height: 100%;
+}
+
+.navbar-part .icon-path{
+  fill: var(--brown-color) !important;
+}
+
+.navbar-part svg:hover .icon-path{
+  fill: var(--light-yellow) !important;
+
 }
 
 .navbar-part {
