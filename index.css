@@ -125,6 +125,7 @@ a {
 
 .navbar-box {
   padding: 1rem;
+  z-index: 30;
 }
 
 .navbar-box.fixed {
@@ -133,7 +134,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 12;
+  z-index: 30;
 }
 
 .navbar-part {
@@ -149,6 +150,35 @@ a {
   align-items: center;
   justify-content: center;
   gap: .7rem;
+}
+.navbar-left .language-selection{
+  display: flex;
+  gap: .7rem;
+}
+
+.navbar-left .language-selection .optional-lang{
+  display: none;
+}
+
+
+.navbar-left .language-selection .optional-lang.white{
+  color: #fff;
+  border: none;
+}
+
+.navbar-left .language-selection .optional-lang.brown{
+  color: var(--brown-color);
+  border: none;
+}
+
+.navbar-left .language-selection .optional-lang.active{
+ display: block;
+}
+
+
+
+.scroll ~ .optional-lang {
+  display: flex;
 }
 
 .navbar-left .language-selection span {
@@ -537,8 +567,8 @@ section#newsFromAzza {
 
 .newsProductBoxes {
   display: grid;
-  grid-template-columns: repeat(4, 354px);
-  grid-template-rows: repeat(2, 370px);
+  grid-template-columns: repeat(4, 0.9fr);
+  grid-template-rows: repeat(2, 0.1fr);
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: 30px 0;
@@ -575,6 +605,7 @@ section#newsFromAzza {
   font-size: 12px;
   font-weight: 600;
   transition: all .4s;
+  letter-spacing: 2px;
 }
 
 .newsProductBox:hover a{
@@ -600,7 +631,7 @@ section#newsFromAzza {
 }
 
 .newsProductBox img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .newsProductBox .commonName {
