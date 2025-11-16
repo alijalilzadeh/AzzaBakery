@@ -1,6 +1,189 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat",sans-serif;
+:root {
+  --yellow-color: #F7941D;
+  --light-yellow: #F6D119;
+  --border-yellow: #F9AF19;
+  --navbar-background: #F7F7F7;
+  --brown-color: #4B2613;
+  --link-icons: #302215;
+  --input-border:#EB5757;
 }
+
+body{
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+html{
+   background: url(logoImages/corporateSalesBg.png) center/cover no-repeat fixed;
+}
+
+section#main{
+  padding-top:90px ;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.azzaFormPart{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: hsla(0, 0%, 100%, .9);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, .25);
+  padding: 40px;
+}
+
+.azzaFormPart h3{
+  color: var(--brown-color);
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.azzaFormPart .formcontent{
+  display: flex;
+  gap: .7rem;
+  width: 100%;
+}
+
+.azzaFormPart .formcontent .left-content form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, .8);
+  padding: 30px ;
+}
+
+.azzaFormPart .formcontent .left-content,.azzaFormPart .formcontent .right-content{
+  width:50%;
+  padding: 30px;
+
+}
+
+.azzaFormPart .formcontent .left-content form label{
+  color: #4F4F4F;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.azzaFormPart .formcontent .left-content form input,.azzaFormPart .formcontent .left-content form textarea{
+  border: 1px solid var(--input-border);
+
+}
+
+.azzaFormPart .formcontent .left-content form textarea{
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+.azzaFormPart .formcontent .left-content form input{
+  height: 40px;
+  text-indent: 10px;
+}
+
+.azzaFormPart .formcontent .left-content form input:focus{
+  outline: none;
+}
+
+.submitButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.submitButton button{
+  border: none;
+  padding: 15px 20px;
+  background-color: var(--light-yellow);
+  color: #4B2613;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  }
+/* <div class="azzaFormPart">
+        <div class="azzaFormBox">
+          <h3>Corporate Sales – Azza Gastronom</h3>
+        </div>
+        <div class="form content">
+          <div class="left-content">
+            <form>
+              <label class="inputNames" for="name" id="name">Name</label>
+              <input type="text">
+
+              <label class="inputNames" for="email" id="email">Email</label>
+              <input type="text">
+
+              <label class="inputNames" for="company" id="company">Company</label>
+              <input type="text">
+
+              <label class="inputNames" for="subject" id="subject">Subject</label>
+              <input type="text">
+
+              <label class="inputNames" for="phonenumber" id="phonenumber">Phone number</label>
+              <input type="text">
+
+              <textarea name="" id=""></textarea>
+            </form>
+            <button type="submit">SUBMIT</button>
+          </div>
+
+          <div class="right-content">
+            <div class="corporateInfo">
+              <p><span>Azza Gastronom</span> is a trusted partner in Azerbaijan for wholesale and retail sales of
+                high-quality food products. We place a strong emphasis on building lasting partnerships with corporate
+                clients.</p>
+            </div>
+
+            <div class="corporateInfo">
+              <p>Thanks to our experience and excellent service, many companies, government institutions, and private
+                businesses choose us for <span>corporate collaboration</span>. We offer a personalized approach,</p>
+            </div>
+
+            <div class="corporateInfo">
+              <p>Our corporate clients can place orders in any quantity for the following products:</p>
+              <ul>
+                <li>Alcoholic and non-alcoholic beverages</li>
+                <li>Grocery items</li>
+                <li>Chocolates, cookies, and Azza’s own confectionery</li>
+                <li>Baked goods (bread, buns, croissants, pies, etc.)</li>
+                <li>Meat and dairy products</li>
+                <li>Nuts and snacks</li>
+              </ul>
+            </div>
+
+            <div class="corporateInfo">
+              <p>Each corporate customer is assigned a dedicated manager to ensure fast and accurate order processing.
+              </p>
+            </div>
+
+            <div class="corporateInfo">
+              <p>For more information, please contact us:</p>
+            </div>
+            <div class="corporateInfo">
+              <span>
+                📱 <a href="#">0504870212</a>
+              </span>
+              <span>
+                📧 <a href="#">corporatesales@azza.az</a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div> */
+
