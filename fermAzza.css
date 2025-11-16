@@ -34,146 +34,12 @@ body {
   height: 100%;
 }
 
-.hamburgerSidebar{
-  transform: translateX(-300px);
-  position: fixed;
-  max-width: 320px;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  background-color: var(--navbar-background);
-  transition: all .4s;
-}
-
-.hamburgerSidebar.opening{
-  transform: translateX(0);
-  transition: all .4s;
-}
-
-.hamburgerSidebar.closing{
-  transform: translateX(-300px);
-  transition: all .4s;
-}
-
-.hamburgerBox{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 20px 40px;
-
-}
-
-.hamburgerBox .upper-part{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-
-.hamburgerBox .upper-part i{
- cursor: pointer;
- color: var(--brown-color);
- font-size: 30px;
-}
-
-.hamburgerBox .sections-part{
-display: flex;
-flex-direction: column;
-gap: 1.5rem;
-}
-
-.hamburgerBox .sections-part a{
-color: var(--brown-color);
-font-weight: 700;
-font-size: 16px;
-}
-
-
-.navbar-part .icon-path{
-  fill: var(--brown-color) !important;
-}
-
-.navbar-part svg:hover .icon-path{
-  fill: var(--light-yellow) !important;
-}
-
-.navbar-part {
-  padding: 1.5rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--navbar-background);
-  z-index: 5;
-}
-
-.navbar-left,
-.navbar-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .7rem;
-}
-
-.navbar-left .language-selection span {
-  cursor: pointer;
-  padding: 4px;
-  align-items: center;
-  display: flex;
-  font-weight: 400;
-  transition: all .4s;
-  color: #000;
-  font-size: 15px;
-}
-
-.fa-solid.fa-bars {
-  color: #fff;
-  font-size: 25px;
-  cursor: pointer;
-  color: var(--brown-color);
-}
-
-.navbar-left .language-selection span:hover {
-  background-color: var(--light-yellow);
-  outline: none;
-}
-
-
-.navbar-right .phone-number {
-  background-color: var(--brown-color);
-  padding: 6px 8px;
-}
-
-.navbar-right .phone-number i,
-.navbar-right .phone-number span {
-  color: #fff;
-}
-
-.navbar-left {
-  gap: 2rem;
-}
 
 .contact-icons span {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-}
-
-section#main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 6rem;
-  gap: 5rem;
 }
 
 .contact-icons span a {
@@ -190,6 +56,19 @@ section#main {
   justify-content: center;
   font-size: 20px !important;
 }
+
+section#main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 6rem;
+  gap: 5rem;
+}
+
+
 
 .video-banner {
   width: 100%;

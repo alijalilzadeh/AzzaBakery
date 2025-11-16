@@ -16,7 +16,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 50px;
 }
 
 a {
@@ -74,7 +74,7 @@ a {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 40;
   background-color: var(--navbar-background);
   transition: all .4s;
 }
@@ -583,7 +583,7 @@ section#newsFromAzza {
 .newsProductBoxes {
   display: grid;
   grid-template-columns: repeat(4, 0.9fr);
-  grid-template-rows: repeat(2, 0.1fr);
+  grid-template-rows: repeat(2);
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: 30px 0;
@@ -596,7 +596,7 @@ section#newsFromAzza {
   align-items: center;
   gap: .6rem;
   width: 100%;
-  height: 100%;
+  height:80%;
   padding: 10px 0;
 }
 
