@@ -5,13 +5,14 @@
   --navbar-background: #F7F7F7;
   --brown-color: #4B2613;
   --link-icons: #302215;
-  --input-border:#EB5757;
+  --input-border: #EB5757;
 }
 
-body{
+body {
   width: 100%;
   height: 100vh;
 }
+
 .container {
   width: 100%;
   display: flex;
@@ -20,19 +21,19 @@ body{
   gap: 4rem;
 }
 
-html{
-   background: url(logoImages/corporateSalesBg.png) center/cover no-repeat fixed;
+html {
+  background: url(logoImages/corporateSalesBg.png) center/cover no-repeat fixed;
 }
 
-section#main{
-  padding-top:90px ;
+section#main {
+  padding-top: 90px;
   display: flex;
   justify-content: center;
-  
+
 }
 
-.azzaFormPart{
-  width: 70%;
+.azzaFormPart {
+  width: 90%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -44,7 +45,7 @@ section#main{
   padding: 40px;
 }
 
-.azzaFormPart h3{
+.azzaFormPart h3 {
   color: var(--brown-color);
   font-weight: 700;
   font-size: 30px;
@@ -52,53 +53,56 @@ section#main{
   text-transform: uppercase;
 }
 
-.azzaFormPart .formcontent{
+.azzaFormPart .formcontent {
   display: flex;
   gap: .7rem;
   width: 100%;
 }
 
-.azzaFormPart .formcontent .left-content form{
+.azzaFormPart .formcontent .left-content form {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: hsla(0, 0%, 100%, .8);
-  padding: 30px ;
+  padding: 30px;
 }
 
-.azzaFormPart .formcontent .left-content,.azzaFormPart .formcontent .right-content{
-  width:50%;
+.azzaFormPart .formcontent .left-content,
+.azzaFormPart .formcontent .right-content {
+  width: 50%;
   padding: 30px;
 
 }
 
-.azzaFormPart .formcontent .left-content form label{
+.azzaFormPart .formcontent .left-content form label {
   color: #4F4F4F;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.azzaFormPart .formcontent .left-content form input,.azzaFormPart .formcontent .left-content form textarea{
-  border: 1px solid var(--input-border);
-
+.azzaFormPart .formcontent .left-content form input,
+.azzaFormPart .formcontent .left-content form textarea {
+  border: 1px solid #e5e5e5;
 }
 
-.azzaFormPart .formcontent .left-content form textarea{
+.azzaFormPart .formcontent .left-content form textarea {
   resize: none;
   width: 100%;
   height: 100px;
+  text-indent: 10px;
 }
 
-.azzaFormPart .formcontent .left-content form input{
+.azzaFormPart .formcontent .left-content form input {
   height: 40px;
   text-indent: 10px;
 }
 
-.azzaFormPart .formcontent .left-content form input:focus{
-  outline: none;
+.azzaFormPart .formcontent .left-content form input:focus,
+.azzaFormPart .formcontent .left-content form textarea:focus {
+  outline: 1px solid rgb(246, 209, 25);
 }
 
-.submitButton{
+.submitButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,15 +110,44 @@ section#main{
   margin: 30px 0;
 }
 
-.submitButton button{
+.submitButton button {
   border: none;
-  padding: 15px 20px;
+  padding: 20px 25px;
   background-color: var(--light-yellow);
   color: #4B2613;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
-  }
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right-content .linkMails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.right-content .linkMails span a{
+ color: #4B2613;
+ transition: all .4s;
+}
+
+.right-content .linkMails span a:hover{
+ color: var(--border-yellow);
+}
+
+
+
+.right-content .corporateInfo p,
+.right-content .corporateInfo ul li {
+  color: #4F4F4F;
+}
+
 /* <div class="azzaFormPart">
         <div class="azzaFormBox">
           <h3>Corporate Sales – Azza Gastronom</h3>
@@ -186,4 +219,3 @@ section#main{
           </div>
         </div>
       </div> */
-
