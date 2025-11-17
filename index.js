@@ -13,7 +13,7 @@ const phoneNumber = document.querySelector(".navbar-right .phone-number ");
 const phoneNumberText = document.querySelector(".navbar-right .phone-number span");
 const phoneIcon = document.querySelector(".navbar-right .phone-number i");
 
-const contactIcons = document.querySelector(".navbar-right .contact-icons a");
+const contactIcons = document.querySelectorAll(".contact-icons a");
 
 window.addEventListener("scroll", () => {
   const isBigger = window.scrollY > 400;

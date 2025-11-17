@@ -263,6 +263,12 @@ span i:not(.fa-circle) {
   color: #fff;
 }
 
+.contact-icons span a.bigger400 {
+ color: #fff !important;
+ background-color: var(--brown-color);
+}
+
+
 .navbar-left {
   gap: 2rem;
 }
@@ -575,7 +581,7 @@ section#newsFromAzza {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px !important;
+  padding: 0 40px 40px 40px !important;
   width: 100%;
   gap: 1rem;
 }
