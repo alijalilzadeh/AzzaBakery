@@ -1,0 +1,100 @@
+:root {
+  --yellow-color: #F7941D;
+  --light-yellow: #F6D119;
+  --border-yellow: #F9AF19;
+  --navbar-background: #F7F7F7;
+  --brown-color: #4B2613;
+  --link-icons: #302215;
+  --input-border: #EB5757;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+html {
+  background: url(logoImages/corporateSalesBg.png) center/cover no-repeat fixed;
+}
+
+section#main {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 10rem;
+  background: #fff;
+}
+
+.background-banner {
+  position: absolute;
+  background-image: url(logoImages/bannerAzzaImage2.png);
+  width:90%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 1; 
+  align-items: center;
+  justify-content: center;
+  opacity: .4;
+
+}
+
+.certificatesBannerWord {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  background-color: hsla(0, 0%, 100%, .7);
+  padding: 100px 63px;
+  position: relative;
+  z-index:5; 
+}
+
+
+
+.certificatesBannerWord p {
+  color: var(--brown-color);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.certificatesBannerWord .linesymboldiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+}
+
+.certificatesBannerWord .linesymboldiv hr {
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px solid var(--brown-color);
+}
+
+
+.certificatesBannerWord .linesymboldiv .circle {
+  width: 7px;
+  height: 7px;
+  background-color: var(--brown-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
