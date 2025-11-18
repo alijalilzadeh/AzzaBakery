@@ -1,55 +1,68 @@
-.hamburgerSidebar{
-  transform: translateX(-300px);
+
+.hamburgerSidebar {
+  transform: translateX(-320px);
   position: fixed;
-  max-width: 320px;
+  width: 320px;
   height: 100vh;
   top: 0;
   left: 0;
   z-index: 40;
-   background-color: var(--navbar-background);
+  background-color: var(--navbar-background);
   transition: all .4s;
+  overflow: hidden;
 }
 
-.hamburgerSidebar.opening{
+.hamburgerSidebar.opening {
   transform: translateX(0);
   transition: all .4s;
 }
 
-.hamburgerSidebar.closing{
-  transform: translateX(-300px);
+.hamburgerSidebar.closing {
+  transform: translateX(-320px);
   transition: all .4s;
 }
 
-.hamburgerBox{
-  width: 100%;
+.hamburgerBox {
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding: 20px 40px;
-
 }
 
-.hamburgerBox .upper-part{
+.hamburgerBox .upper-part {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
 }
 
-.hamburgerBox .upper-part i{
- cursor: pointer;
- color: var(--brown-color);
- font-size: 30px;
+.hamburgerBox .upper-part i {
+  cursor: pointer;
+  color: var(--brown-color);
+  font-size: 30px;
 }
 
-.hamburgerBox .sections-part{
-display: flex;
-flex-direction: column;
-gap: 1.5rem;
+.hamburgerBox .sections-part {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+   max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 5px;
 }
 
-.hamburgerBox .sections-part a{
-color: var(--brown-color);
-font-weight: 700;
-font-size: 16px;
+.hamburgerBox .sections-part a {
+  color: var(--brown-color);
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sections-part .underproducts{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
 }
