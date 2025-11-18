@@ -67,6 +67,19 @@
   justify-content: center;
 }
 
+.cookiesImgBoxes .cookieImgBox span .cookieType{
+  font-size: 12px;
+  color: #5a5757;
+  font-weight: 700;
+}
+
+.cookiesImgBoxes .cookieImgBox span .cookiename{
+  font-size: 15px;
+  color: var(--brown-color);
+  font-weight: 700;
+}
+
+
 .bannerWord{
   display: flex;
   align-items: center;
@@ -81,20 +94,10 @@
   transform: translate(-50%,-50%);
 }
 
-.bannerText{
-  color: var(--brown-color);
-  font-size: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
-  width: 50%;
-  display: flex;
-  text-align: center;
-}
-
-.cakesImgBoxes{
+.cookiesImgBoxes{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -102,7 +105,7 @@
   padding: 0 4rem;
 }
 
-.cakesImgBoxes .cakeImgBox{
+.cookiesImgBoxes .cookieImgBox{
   width: 100%;
   height: 100%;
   display: flex;
@@ -113,45 +116,45 @@
   transition: all .4s;
 }
 
-.cakesImgBoxes .cakeImgBox span{
+.cookiesImgBoxes .cookieImgBox span{
   display: flex;
   flex-direction: column;
   text-align: center;
   gap:.7rem;
 }
 
-.cakesImgBoxes .cakeImgBox span .cakeType{
+.cookiesImgBoxes .cookieImgBox span .cakeType{
   font-size: 12px;
   color: #5a5757;
   font-weight: 700;
 }
 
-.cakesImgBoxes .cakeImgBox span .cakename{
+.cookiesImgBoxes .cookieImgBox span .cakename{
   font-size: 15px;
   color: var(--brown-color);
   font-weight: 700;
 }
 
 
-.cakesImgBoxes .cakeImgBox:hover .img-part img{
+.cookiesImgBoxes .cookieImgBox:hover .img-part img{
   transform: scale(1.1);
 }
 
 
-.cakesImgBoxes .cakeImgBox .img-part{
+.cookiesImgBoxes .cookieImgBox .img-part{
   width: 100%;
   height: 70%;
   overflow: hidden;
   position: relative;
 }
 
-.cakesImgBoxes .cakeImgBox .img-part img{
+.cookiesImgBoxes .cookieImgBox .img-part img{
   width: 100%;
-  height: 100%;
+  height:100%;
   transition: all .4s;
 }
 
- .cakeImgBox a {
+ .cookieImgBox a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -174,11 +177,11 @@
   letter-spacing: 2px;
 }
 
-.cakeImgBox:hover a{
+.cookieImgBox:hover a{
   opacity: 1;
 }
 
-.cakeImgBox a:hover {
+.cookieImgBox a:hover {
   color: #666666;
 } 
 
@@ -201,4 +204,14 @@
 
 .cakeLinks a:hover{
 color: var(--light-yellow);
+}
+
+.bannerText{
+  color: var(--brown-color);
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 50%;
+  display: flex;
+  text-align: center;
 }
