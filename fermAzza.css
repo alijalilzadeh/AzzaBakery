@@ -18,7 +18,7 @@ html {
   scroll-margin-top: 100px;
   background: url(fermAzzaWebPage/logoImagescopy/fermAzzaBanner.png) center/cover no-repeat;
 }
- 
+
 a {
   text-decoration: none;
 }
@@ -64,7 +64,6 @@ section#main {
   justify-content: center;
   text-align: center;
   padding: 0 6rem;
-  gap: 5rem;
 }
 
 
@@ -84,7 +83,6 @@ video {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(-100px);
   width: 100%;
 }
 
@@ -337,19 +335,19 @@ video {
   font-size: 31px;
 }
 
-.fermAzzaQualityExpression{
+.fermAzzaQualityExpression {
   padding: 82px 40px;
   width: 90%;
   height: auto;
-   background-color: rgba(235, 235, 235, .55);
+  background-color: rgba(235, 235, 235, .55);
 }
 
-.fermAzzaQualityExpression p{
+.fermAzzaQualityExpression p {
   justify-content: center;
   display: flex;
-color: var(--brown-color);
-font-size: 28px;
-font-weight: 700;
+  color: var(--brown-color);
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .holsteinFritzAbout p:nth-of-type(2) {

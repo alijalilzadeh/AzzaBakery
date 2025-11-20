@@ -50,7 +50,12 @@
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 5px;
+   -webkit-overflow-scrolling: touch; 
 }
+
+ .hamburgerBox .sections-part::-webkit-scrollbar {
+  display: none;
+} 
 
 .sections-part .underproducts {
   display: none;
