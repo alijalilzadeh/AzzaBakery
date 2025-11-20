@@ -8,31 +8,8 @@
   --input-border: #EB5757;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 4rem;
-}
-
 html {
   background: url(logoImages/certificatesbg.webp) center/cover no-repeat fixed;
-}
-
-section#main {
-  padding-top: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 10rem;
 }
 
 .certificatesBannerWord {
@@ -45,6 +22,10 @@ section#main {
   justify-content: center;
   background-color: hsla(0, 0%, 100%, .5);
   padding: 100px 63px;
+}
+
+section#main{
+  margin: 120px 0 80px 0;
 }
 
 .certificatesBannerWord p {

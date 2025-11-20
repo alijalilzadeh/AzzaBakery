@@ -1,0 +1,170 @@
+:root {
+  --yellow-color: #F7941D;
+  --light-yellow: #F6D119;
+  --border-yellow: #F9AF19;
+  --navbar-background: #F7F7F7;
+  --brown-color: #4B2613;
+  --link-icons: #302215;
+}
+
+.groceryBannerWord {
+  width:60%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  background-color: hsla(0, 0%, 100%, .8);
+  padding: 120px 63px;
+  position: absolute;
+  z-index: 2;
+}
+
+.mainCakeImagePart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mainCakeImagePart .img-part{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainCakeImagePart .img-part img{
+  width: 100%;
+}
+
+.groceryBannerWord p {
+  color: var(--brown-color);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.groceryBannerWord .linesymboldiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+}
+
+.groceryBannerWord .linesymboldiv hr {
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px solid var(--brown-color);
+}
+
+
+.groceryBannerWord .linesymboldiv .circle {
+  width: 7px;
+  height: 7px;
+  background-color: var(--brown-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerWord{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(logoImages/bannerAzzaImage2.png);
+  z-index: 5;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.bannerText{
+  color: var(--brown-color);
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 70%;
+  display: flex;
+  text-align: center;
+}
+
+.groceryImagePart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: 2rem;
+  padding: 5rem 6rem;
+  background-color: #fff;
+}
+
+.groceryImgBox,
+.groceryImgBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.groceryImgBox .groceryP p,
+.groceryImgBox .groceryP p {
+  color: var(--brown-color);
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.groceryP {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.groceryImgBox .img-part p{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.groceryImgBox .img-part {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.groceryImgBox .img-part img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainImg {
+  z-index: 1; 
+  width: 100%; 
+}
+
+.bannerImg {
+  z-index: 2; 
+}
+
+.imgText {
+  z-index: 3; 
+}

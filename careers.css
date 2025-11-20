@@ -8,29 +8,8 @@
   --input-border: #EB5757;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 html {
   background: url(logoImages/corporateSalesBg.png) center/cover no-repeat fixed;
-}
-
-section#main {
-  padding-top: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 10rem;
 }
 
 .background-banner {

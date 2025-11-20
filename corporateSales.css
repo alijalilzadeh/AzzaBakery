@@ -8,28 +8,8 @@
   --input-border: #EB5757;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 4rem;
-}
-
 html {
   background: url(logoImages/corporateSalesBg.png) center/cover no-repeat fixed;
-}
-
-section#main {
-  padding-top: 90px;
-  display: flex;
-  justify-content: center;
-
 }
 
 .azzaFormPart {
@@ -43,6 +23,10 @@ section#main {
   background-color: hsla(0, 0%, 100%, .9);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, .25);
   padding: 40px;
+}
+
+section#main{
+  margin: 150px 0 80px 0;
 }
 
 .azzaFormPart h3 {
