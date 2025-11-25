@@ -84,66 +84,64 @@
   text-align: center;
 }
 
-section#main {
+.groceryImageBoxes {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem !important;
-
 }
 
-section#main .groceryImagesBoxes {
+.groceryImageBoxes .groceryImageBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.groceryImageBoxes .groceryImageBox .descriptionPart{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 100%;
-  padding: 0 4rem !important;
+  width: 30%;
 }
 
-section#main .groceryImagesBoxes .groceryImageBox {
+.descriptionPart .groceryName{
+  font-size: 21px;
+  font-weight: 700 !important;
+}
+
+.descriptionPart .groceryName,.descriptionPart .groceryType{
+  color: var(--brown-color);
+  font-weight: 600;
+}
+
+.descriptionPart .groceryDescription{
+  color: #605c5c;
+}
+
+.groceryImageBoxes .groceryImageBox .img-box {
   display: flex;
-  gap: 1rem;
-  width: 100%;
-}
-
-section#main .groceryImagesBoxes .groceryImageBox .left-part .descriptionPart{
-  width: 10%;
-}
-
-section#main .groceryImagesBoxes .groceryImageBox .right-part {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-}
-
-.leftPart .img-part {
   position: relative;
-  width: 100%;
+  width: 800px;
+  height: 800px;
 }
 
-.leftPart .img-part img:first-child {
-  position: relative;
+.groceryImageBox .img-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.groceryImageBox .img-box img:first-child {
+  z-index: 2;
+
+}
+
+.groceryImageBox .img-box img:nth-child(2) {
   z-index: 1;
   width: 100%;
 }
 
-.leftPart .img-part img:nth-child(2) {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
+.groceryImageBox .img-box img:nth-child(3) {
   z-index: 3;
-}
-
-.leftPart .img-part img:nth-child(3) {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
 }
