@@ -1,0 +1,206 @@
+:root {
+  --yellow-color: #F7941D;
+  --light-yellow: #F6D119;
+  --border-yellow: #F9AF19;
+  --navbar-background: #F7F7F7;
+  --brown-color: #4B2613;
+  --link-icons: #302215;
+}
+
+.breadBannerWord {
+  width:60%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  background-color: hsla(0, 0%, 100%, .8);
+  padding: 120px 63px;
+  position: absolute;
+  z-index: 2;
+}
+
+.mainCakeImagePart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mainCakeImagePart .img-part{
+  width: 100%;
+}
+
+.mainCakeImagePart .img-part img{
+  width: 100%;
+}
+
+.breadBannerWord p {
+  color: var(--brown-color);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.breadBannerWord .linesymboldiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+}
+
+.breadBannerWord .linesymboldiv hr {
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px solid var(--brown-color);
+}
+
+
+.breadBannerWord .linesymboldiv .circle {
+  width: 7px;
+  height: 7px;
+  background-color: var(--brown-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerWord{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(logoImages/bannerAzzaImage2.png);
+  z-index: 5;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.bannerText{
+  color: var(--brown-color);
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadImgBoxes{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.breadImgBoxes .breadImgBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all .4s;
+}
+
+.breadImgBoxes .breadImgBox span{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap:.7rem;
+}
+
+.breadImgBoxes .breadImgBox span .breadType{
+  font-size: 12px;
+  color: #5a5757;
+  font-weight: 700;
+}
+
+.breadImgBoxes .breadImgBox span .breadname{
+  font-size: 15px;
+  color: var(--brown-color);
+  font-weight: 700;
+}
+
+
+.breadImgBoxes .breadImgBox:hover .img-part img{
+  transform: scale(1.1);
+}
+
+
+.breadImgBoxes .breadImgBox .img-part{
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  position: relative;
+}
+
+.breadImgBoxes .breadImgBox .img-part img{
+  width: 100%;
+  height: 100%;
+  transition: all .4s;
+}
+
+ .breadImgBox a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: wrap;
+  padding: 20px 10px;
+  width: 110px;
+  height: 100px;
+  background-color: rgba(244, 234, 185, .95);
+  z-index: 20;
+  color: var(--brown-color);
+  font-size: 12px;
+  font-weight: 600;
+  transition: all .4s;
+  letter-spacing: 2px;
+}
+
+.breadImgBox:hover a{
+  opacity: 1;
+}
+
+.breadImgBox a:hover {
+  color: #666666;
+} 
+
+
+.cakeLinks{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.cakeLinks a{
+  font-size: 12px;
+  color: var(--brown-color);
+  font-weight: 700;
+  transition: all .4s;
+}
+
+
+.cakeLinks a:hover{
+color: var(--light-yellow);
+}
