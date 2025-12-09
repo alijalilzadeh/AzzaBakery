@@ -126,33 +126,34 @@ a {
   justify-content: center;
   gap: .7rem;
 }
-.navbar-left .language-selection{
+
+.navbar-left .language-selection {
   display: flex;
   gap: .7rem;
 }
 
-.navbar-left .language-selection .optional-lang{
+.navbar-left .language-selection .optional-lang {
   display: none;
 }
 
 
-.navbar-left .language-selection .optional-lang.white{
+.navbar-left .language-selection .optional-lang.white {
   color: #fff;
   border: none;
 }
 
-.navbar-left .language-selection .optional-lang.brown{
+.navbar-left .language-selection .optional-lang.brown {
   color: var(--brown-color);
   border: none;
 }
 
-.navbar-left .language-selection .optional-lang.active{
- display: block;
+.navbar-left .language-selection .optional-lang.active {
+  display: block;
 }
 
 
 
-.scroll ~ .optional-lang {
+.scroll~.optional-lang {
   display: flex;
 }
 
@@ -239,8 +240,8 @@ span i:not(.fa-circle) {
 }
 
 .contact-icons span a.bigger400 {
- color: #fff !important;
- background-color: var(--brown-color);
+  color: #fff !important;
+  background-color: var(--brown-color);
 }
 
 
@@ -300,24 +301,24 @@ span i:not(.fa-circle) {
   text-transform: uppercase;
   font-weight: 500;
   color: #fff;
-  font-size:15px;
-  width:28%;
+  font-size: 15px;
+  width: 28%;
 }
 
-.dash-circle-icon{
+.dash-circle-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 20;
 }
 
-.dash-circle-icon .line{
+.dash-circle-icon .line {
   border-bottom: 3px solid #fff;
   width: 60px;
   background-color: #fff;
 }
 
-.dash-circle-icon .circle{
+.dash-circle-icon .circle {
   width: 10px;
   height: 10px;
   background-color: #fff;
@@ -350,18 +351,138 @@ section#map {
 }
 
 .map-wrapper {
+  position: relative;
   width: 100%;
   height: 600px;
   margin: 0 auto;
-  overflow: hidden;
   border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.searchAzzaStoresBox {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #F6F4F4;
+  padding: 50px 80px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
 }
 
 .map-wrapper iframe {
   width: 100%;
   height: 100%;
   border: none;
-  display: block;
+}
+
+.searchAzzaStoresBox h3 {
+  color: var(--brown-color);
+  font-size: 20px;
+}
+
+.searchAzzaStoresBox .inputPart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+
+.searchAzzaStoresBox .inputPart .locationSelect {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: .8rem;
+}
+
+.searchAzzaStoresBox .inputPart .locationSelect i {
+  font-size: 20px;
+  color: var(--brown-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchAzzaStoresBox .inputPart .locationSelect button {
+  background-color: #F9DF5E;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  color: #4C4C4C;
+  font-weight: 700;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.searchAzzaStoresBox .districtsOfBaku {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchAzzaStoresBox .districtsOfBaku .districtsLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.searchAzzaStoresBox .citiesLinks {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+.searchAzzaStoresBox .citiesLinks div {
+  display: flex;
+  gap: 1rem;
+}
+
+.searchAzzaStoresBox .districtsOfBaku a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brown-color);
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 22px;
+}
+
+.searchAzzaStoresBox .districtsOfBaku h2 {
+  color: var(--brown-color);
+  font-size: 15px;
+  text-align: center;
+}
+
+.searchAzzaStoresBox .inputPart input {
+  height: 50px;
+  width: 100%;
+  text-indent: 15px;
+  border: 1px solid #bdbcbc;
+  border-radius: 5px;
+  padding: 6px 0;
+}
+
+.searchAzzaStoresBox .inputPart input::placeholder {
+  font-size: 16px;
+
+}
+
+.searchAzzaStoresBox .inputPart input:focus {
+  outline: none;
 }
 
 section * {
@@ -591,7 +712,7 @@ section#newsFromAzza {
   align-items: center;
   gap: .6rem;
   width: 100%;
-  height:80%;
+  height: 80%;
   padding: 10px 0;
 }
 
@@ -599,7 +720,7 @@ section#newsFromAzza {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   opacity: 0;
   align-items: center;
@@ -618,7 +739,7 @@ section#newsFromAzza {
   letter-spacing: 2px;
 }
 
-.newsProductBox:hover a{
+.newsProductBox:hover a {
   opacity: 1;
 }
 
