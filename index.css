@@ -185,7 +185,7 @@ a {
 }
 
 .interier-view {
-  background: url(logoImages/AzzaHomePageImage.jpg) center/cover no-repeat;
+  background: url(logoImages/home-scaled.jpg) center/cover no-repeat;
   width: 100%;
   height: 100%;
   font-family: "Montserrat", sans-serif;
@@ -196,7 +196,7 @@ a {
 .interier-layer {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(0deg, rgb(102, 0, 0, 0.5) 0%, rgba(153, 52, 0, 0) 100%);
+  background-image: linear-gradient(0deg, rgb(102, 0, 0, 0.3) 0%, rgba(153, 52, 0, 0) 100%);
   z-index: 1;
 }
 
@@ -297,18 +297,32 @@ span i:not(.fa-circle) {
 }
 
 .center-part p {
-  width: 50%;
   text-transform: uppercase;
   font-weight: 500;
   color: #fff;
-  white-space: wrap;
-  font-size: 1.2rem;
+  font-size:15px;
+  width:28%;
 }
 
-.center-part p:nth-child(3) {
-  font-family: "Alex Brush", cursive !important;
-  font-weight: 600;
-  font-size: 1.4rem;
+.dash-circle-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.dash-circle-icon .line{
+  border-bottom: 3px solid #fff;
+  width: 60px;
+  background-color: #fff;
+}
+
+.dash-circle-icon .circle{
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 8px;
 }
 
 span .fa-arrow-down {
