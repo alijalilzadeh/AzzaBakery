@@ -364,7 +364,6 @@ section#map {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 50;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -418,7 +417,7 @@ section#map {
   padding: 6px;
   border-radius: 4px;
   color: #4C4C4C;
-  font-weight: 700;
+  font-weight: 600;
   height: 50px;
   width: 50px;
   cursor: pointer;

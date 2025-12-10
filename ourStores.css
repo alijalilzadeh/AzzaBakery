@@ -1,0 +1,325 @@
+:root {
+  --yellow-color: #F7941D;
+  --light-yellow: #F6D119;
+  --border-yellow: #F9AF19;
+  --navbar-background: #F7F7F7;
+  --brown-color: #4B2613;
+  --link-icons: #302215;
+}
+
+section#main {
+  gap: 0 !important;
+}
+
+.productionBannerWord {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  background-color: hsla(0, 0%, 100%, .7);
+  padding: 100px;
+  position: absolute;
+  z-index: 2;
+}
+
+.mainCakeImagePart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mainCakeImagePart .img-part {
+  width: 100%;
+}
+
+.mainCakeImagePart .img-part img {
+  width: 100%;
+}
+
+.productionBannerWord p {
+  color: var(--brown-color);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.productionBannerWord .linesymboldiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+}
+
+.productionBannerWord .linesymboldiv hr {
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px solid var(--brown-color);
+}
+
+
+.productionBannerWord .linesymboldiv .circle {
+  width: 7px;
+  height: 7px;
+  background-color: var(--brown-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerWord {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(logoImages/bannerAzzaImage2.png);
+  z-index: 5;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bannerText {
+  color: var(--brown-color);
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.productionSectionDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.productionSectionDescription span {
+  text-align: center;
+  line-height: 1.5;
+  color: var(--brown-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.searchAzzaStoresBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #F6F4F4;
+  padding: 90px 80px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}
+
+.searchAzzaStoresBox h3 {
+  color: var(--brown-color);
+  font-size: 20px;
+}
+
+.searchAzzaStoresBox .inputPart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.searchAzzaStoresBox .inputPart .locationSelect {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: .8rem;
+}
+
+.searchAzzaStoresBox .inputPart .locationSelect i {
+  font-size: 20px;
+  color: var(--brown-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchAzzaStoresBox .inputPart .locationSelect button {
+  background-color: #F9DF5E;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  color: #4C4C4C;
+  font-weight: 600;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.searchAzzaStoresBox .districtsOfBaku {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchAzzaStoresBox .districtsOfBaku .districtsLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.searchAzzaStoresBox .citiesLinks {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+.searchAzzaStoresBox .citiesLinks div {
+  display: flex;
+  gap: 1rem;
+}
+
+.searchAzzaStoresBox .districtsOfBaku a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brown-color);
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 22px;
+}
+
+.searchAzzaStoresBox .districtsOfBaku h2 {
+  color: var(--brown-color);
+  font-size: 15px;
+  text-align: center;
+}
+
+.searchAzzaStoresBox .inputPart input {
+  height: 50px;
+  width: 100%;
+  text-indent: 15px;
+  border: 1px solid #bdbcbc;
+  border-radius: 5px;
+  padding: 6px 0;
+}
+
+.searchAzzaStoresBox .inputPart input::placeholder {
+  font-size: 16px;
+
+}
+
+.searchAzzaStoresBox .inputPart input:focus {
+  outline: none;
+}
+
+.map-wrapper {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.map-wrapper .locationSections {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  background-color: #F6F4F4;
+}
+
+.map-wrapper .locationSections .locationLinks {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 590px;
+  padding: 20px 15px;
+}
+
+.map-wrapper .locationSections .locationLinks::-webkit-scrollbar {
+  width: 15px;
+}
+
+.map-wrapper .locationSections .locationLinks::-webkit-scrollbar-track {
+  background-color: #f3f3f3;
+}
+
+.map-wrapper .locationSections .locationLinks::-webkit-scrollbar-thumb {
+  background-color: var(--light-yellow);
+  border-radius: 10px;
+  border: 2px solid #f3f3f3;
+}
+
+.map-wrapper .locationSections .locationLinks a {
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d2d1d1;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.underAbsheronlocations{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.underAbsheronlocations .underLinks{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  padding:15px ;
+  cursor: pointer;
+  transition: all .4s;
+  position: relative;
+}
+
+.underAbsheronlocations .underLinks:hover{
+  background-color: #F4EAB9;
+}
+.underAbsheronlocations .underLinks p{
+  color: var(--brown-color);
+  font-weight: 600;
+}
+
+.underAbsheronlocations .underLinks a{
+font-size: 9px !important;
+color: var(--brown-color);
+font-weight: 500 !important;
+letter-spacing: 1px;
+border: none !important;
+display: flex;
+justify-content: flex-end;
+}
