@@ -273,7 +273,7 @@ section#main {
   border: 2px solid #f3f3f3;
 }
 
-.map-wrapper .locationSections .locationLinks a {
+.map-wrapper .locationSections .locationLinks .mainLinks {
   font-size: 22px;
   color: #000;
   font-weight: 700;
@@ -283,38 +283,47 @@ section#main {
   padding: 6px 8px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
-.underAbsheronlocations{
-  display: flex;
+.underSection{
+  display: none;
   flex-direction: column;
   gap: 0.8rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-.underAbsheronlocations .underLinks{
+.underSection.active{
+  display: flex;
+}
+
+.underSection .underLinks{
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: .5rem;
   width:100%;
-  padding:15px ;
+  padding:25px ;
   cursor: pointer;
   transition: all .4s;
   position: relative;
 }
 
-.underAbsheronlocations .underLinks:hover{
+.underSection .underLinks:hover{
   background-color: #F4EAB9;
 }
-.underAbsheronlocations .underLinks p{
+.underSection .underLinks p{
   color: var(--brown-color);
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
 }
 
-.underAbsheronlocations .underLinks a{
+.underSection .underLinks a{
 font-size: 9px !important;
 color: var(--brown-color);
 font-weight: 500 !important;
