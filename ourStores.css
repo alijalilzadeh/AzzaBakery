@@ -204,6 +204,11 @@ section#main {
   border-radius: 22px;
 }
 
+.searchAzzaStoresBox .districtsOfBaku a:active {
+  border: 1px solid var(--light-yellow);
+}
+
+
 .searchAzzaStoresBox .districtsOfBaku h2 {
   color: var(--brown-color);
   font-size: 15px;
@@ -286,7 +291,7 @@ section#main {
   cursor: pointer;
 }
 
-.underSection{
+.underSection {
   display: none;
   flex-direction: column;
   gap: 0.8rem;
@@ -294,26 +299,27 @@ section#main {
   justify-content: flex-end;
 }
 
-.underSection.active{
+.underSection.active {
   display: flex;
 }
 
-.underSection .underLinks{
+.underSection .underLinks {
   background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  width:100%;
-  padding:25px ;
+  width: 100%;
+  padding: 25px;
   cursor: pointer;
   transition: all .4s;
   position: relative;
 }
 
-.underSection .underLinks:hover{
+.underSection .underLinks:hover {
   background-color: #F4EAB9;
 }
-.underSection .underLinks p{
+
+.underSection .underLinks p {
   color: var(--brown-color);
   font-weight: 600;
   display: flex;
@@ -323,12 +329,12 @@ section#main {
   width: 90%;
 }
 
-.underSection .underLinks a{
-font-size: 9px !important;
-color: var(--brown-color);
-font-weight: 500 !important;
-letter-spacing: 1px;
-border: none !important;
-display: flex;
-justify-content: flex-end;
+.underSection .underLinks a {
+  font-size: 9px !important;
+  color: var(--brown-color);
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  border: none !important;
+  display: flex;
+  justify-content: flex-end;
 }
