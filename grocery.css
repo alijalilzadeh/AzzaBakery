@@ -90,32 +90,36 @@
   flex-direction: column;
 }
 
-.groceryImageBoxes .groceryImageBox{
+.groceryImageBoxes .groceryImageBox {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
 }
 
-.groceryImageBoxes .groceryImageBox .descriptionPart{
+.groceryImageBoxes .groceryImageBox .descriptionPart {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 30%;
 }
 
-.descriptionPart .groceryName{
+.descriptionPart .groceryName {
   font-size: 21px;
   font-weight: 700 !important;
 }
 
-.descriptionPart .groceryName,.descriptionPart .groceryType{
+.descriptionPart .groceryName,
+.descriptionPart .groceryType {
   color: var(--brown-color);
   font-weight: 600;
 }
 
-.descriptionPart .groceryDescription{
+.descriptionPart .groceryDescription {
   color: #605c5c;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .groceryImageBoxes .groceryImageBox .img-box {
@@ -125,7 +129,7 @@
   height: 800px;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .groceryImageBox .img-box img {
@@ -136,16 +140,21 @@
 }
 
 .groceryImageBox .img-box img:first-child {
-  z-index: 2;
+  z-index: 3;
 }
 
 .groceryImageBox .img-box img:nth-child(2) {
-  z-index: 1;
+  z-index:1;
   width: 100%;
 }
 
 .groceryImageBox .img-box img:nth-child(3) {
-  z-index: 3;
-  width:120px;
+  z-index: 4;
+  width: 150px;
   height: 120px;
+}
+
+.groceryImageBox .img-box img:nth-child(4) {
+  z-index: 2;
+  width: 50%;
 }
