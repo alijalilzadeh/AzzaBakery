@@ -8,7 +8,7 @@
 }
 
 .cookiesBannerWord {
-  width:60%;
+  width: 60%;
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   z-index: 2;
 }
 
-.mainCakeImagePart{
+.mainCakeImagePart {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,11 +29,11 @@
   position: relative;
 }
 
-.mainCakeImagePart .img-part{
+.mainCakeImagePart .img-part {
   width: 100%;
 }
 
-.mainCakeImagePart .img-part img{
+.mainCakeImagePart .img-part img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -69,20 +69,20 @@
   justify-content: center;
 }
 
-.cookiesImgBoxes .cookieImgBox span .cookieType{
+.cookiesImgBoxes .cookieImgBox span .cookieType {
   font-size: 12px;
   color: #5a5757;
   font-weight: 700;
 }
 
-.cookiesImgBoxes .cookieImgBox span .cookiename{
+.cookiesImgBoxes .cookieImgBox span .cookiename {
   font-size: 15px;
   color: var(--brown-color);
   font-weight: 700;
 }
 
 
-.bannerWord{
+.bannerWord {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,21 +93,21 @@
   height: 80%;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.cookiesImgBoxes{
+.cookiesImgBoxes {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 1rem !important;
+  gap: 1.5rem !important;
   padding: 0 4rem;
+  margin: 30px 0;
 }
 
-.cookiesImgBoxes .cookieImgBox{
+.cookiesImgBoxes .cookieImgBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -118,49 +118,49 @@
   transition: all .4s;
 }
 
-.cookiesImgBoxes .cookieImgBox span{
+.cookiesImgBoxes .cookieImgBox span {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap:.7rem;
+  gap: .7rem;
 }
 
-.cookiesImgBoxes .cookieImgBox span .cakeType{
+.cookiesImgBoxes .cookieImgBox span .cakeType {
   font-size: 12px;
   color: #5a5757;
   font-weight: 700;
 }
 
-.cookiesImgBoxes .cookieImgBox span .cakename{
+.cookiesImgBoxes .cookieImgBox span .cakename {
   font-size: 15px;
   color: var(--brown-color);
   font-weight: 700;
 }
 
 
-.cookiesImgBoxes .cookieImgBox:hover .img-part img{
+.cookiesImgBoxes .cookieImgBox:hover .img-part img {
   transform: scale(1.1);
 }
 
-
-.cookiesImgBoxes .cookieImgBox .img-part{
+.cookiesImgBoxes .cookieImgBox .img-part {
   width: 100%;
-  height: 60%;
+  height: 100%;
   overflow: hidden;
   position: relative;
+  object-fit: cover;
 }
 
-.cookiesImgBoxes .cookieImgBox .img-part img{
+.cookiesImgBoxes .cookieImgBox .img-part img {
   width: 100%;
-  height:100%;
+  height: 100%;
   transition: all .4s;
 }
 
- .cookieImgBox a {
+.cookieImgBox a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   opacity: 0;
   align-items: center;
@@ -179,16 +179,16 @@
   letter-spacing: 2px;
 }
 
-.cookieImgBox:hover a{
+.cookieImgBox:hover a {
   opacity: 1;
 }
 
 .cookieImgBox a:hover {
   color: #666666;
-} 
+}
 
 
-.cakeLinks{
+.cakeLinks {
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -196,7 +196,7 @@
   margin-bottom: 70px;
 }
 
-.cakeLinks a{
+.cakeLinks a {
   font-size: 12px;
   color: var(--brown-color);
   font-weight: 700;
@@ -204,11 +204,11 @@
 }
 
 
-.cakeLinks a:hover{
-color: var(--light-yellow);
+.cakeLinks a:hover {
+  color: var(--light-yellow);
 }
 
-.bannerText{
+.bannerText {
   color: var(--brown-color);
   font-size: 21px;
   font-weight: 700;
@@ -216,4 +216,5 @@ color: var(--light-yellow);
   width: 50%;
   display: flex;
   text-align: center;
+  margin-top: 30px;
 }

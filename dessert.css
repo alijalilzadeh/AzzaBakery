@@ -8,7 +8,7 @@
 }
 
 .dessertBannerWord {
-  width:60%;
+  width: 60%;
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   z-index: 2;
 }
 
-.mainCakeImagePart{
+.mainCakeImagePart {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,11 +29,11 @@
   position: relative;
 }
 
-.mainCakeImagePart .img-part{
+.mainCakeImagePart .img-part {
   width: 100%;
 }
 
-.mainCakeImagePart .img-part img{
+.mainCakeImagePart .img-part img {
   width: 100%;
 }
 
@@ -67,20 +67,20 @@
   justify-content: center;
 }
 
-.dessertsImgBoxes .dessertImgBox span .cookieType{
+.dessertsImgBoxes .dessertImgBox span .cookieType {
   font-size: 12px;
   color: #5a5757;
   font-weight: 700;
 }
 
-.dessertsImgBoxes .dessertImgBox span .cookiename{
+.dessertsImgBoxes .dessertImgBox span .cookiename {
   font-size: 15px;
   color: var(--brown-color);
   font-weight: 700;
 }
 
 
-.bannerWord{
+.bannerWord {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,21 +91,21 @@
   height: 80%;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.dessertsImgBoxes{
+.dessertsImgBoxes {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(5,1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: center;
   width: 100%;
   gap: 2rem;
   padding: 0 4rem;
+  margin: 30px 0;
 }
 
-.dessertsImgBoxes .dessertImgBox{
+.dessertsImgBoxes .dessertImgBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -116,49 +116,48 @@
   transition: all .4s;
 }
 
-.dessertsImgBoxes .dessertImgBox span{
+.dessertsImgBoxes .dessertImgBox span {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap:.7rem;
+  gap: .7rem;
 }
 
-.dessertsImgBoxes .dessertImgBox span .cakeType{
-  font-size: 12px;
-  color: #5a5757;
-  font-weight: 700;
-}
-
-.dessertsImgBoxes .dessertImgBox span .cakename{
-  font-size: 15px;
-  color: var(--brown-color);
-  font-weight: 700;
-}
-
-
-.dessertsImgBoxes .dessertImgBox:hover .img-part img{
+.dessertsImgBoxes .dessertImgBox:hover .img-part img {
   transform: scale(1.1);
 }
 
 
-.dessertsImgBoxes .dessertImgBox .img-part{
+.dessertsImgBoxes .dessertImgBox .img-part {
   width: 100%;
   height: 60%;
   overflow: hidden;
   position: relative;
 }
 
-.dessertsImgBoxes .dessertImgBox .img-part img{
+.dessertsImgBoxes .dessertImgBox .img-part img {
   width: 100%;
-  height:100%;
+  height: 100%;
   transition: all .4s;
 }
 
- .dessertImgBox a {
+.dessertsImgBoxes .dessertImgBox span .cakeType {
+  font-size: 12px;
+  color: #5a5757;
+  font-weight: 700;
+}
+
+.dessertsImgBoxes .dessertImgBox span .cakename {
+  font-size: 15px;
+  color: var(--brown-color);
+  font-weight: 700;
+}
+
+.dessertImgBox a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   opacity: 0;
   align-items: center;
@@ -177,34 +176,34 @@
   letter-spacing: 2px;
 }
 
-.dessertImgBox:hover a{
+.dessertImgBox:hover a {
   opacity: 1;
 }
 
 .dessertImgBox a:hover {
   color: #666666;
-} 
+}
 
-.cakeLinks{
+.cakeLinks {
   display: flex;
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  margin-bottom: 70px;
+  margin: 30px 0;
 }
 
-.cakeLinks a{
+.cakeLinks a {
   font-size: 12px;
   color: var(--brown-color);
   font-weight: 700;
   transition: all .4s;
 }
 
-.cakeLinks a:hover{
-color: var(--light-yellow);
+.cakeLinks a:hover {
+  color: var(--light-yellow);
 }
 
-.bannerText{
+.bannerText {
   color: var(--brown-color);
   font-size: 21px;
   font-weight: 700;

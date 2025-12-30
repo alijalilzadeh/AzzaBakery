@@ -6,6 +6,10 @@
   --brown-color: #4B2613;
   --link-icons: #302215;
 }
+
+.bannerText{
+  margin-top: 30px;
+}
 section#footer {
   padding: 100px 50px 52px 30px;
   background: url(logoImages/footerBannerAzzaImage.png);
