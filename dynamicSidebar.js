@@ -10,3 +10,20 @@ xMark.addEventListener("click",()=>{
     hamburgerSidebar.classList.remove("opening");
     hamburgerSidebar.classList.toggle("closing");
 })
+
+const productBoxes = document.querySelectorAll(".productBox");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  },
+  {
+    threshold: 0.3
+  }
+);
+
+productBoxes.forEach(productBox => observer.observe(productBox));

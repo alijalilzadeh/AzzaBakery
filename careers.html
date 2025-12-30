@@ -134,7 +134,7 @@
             <img src="Vacations/Packer.png" alt="Packer">
           </div>
           <span class="workName">
-            <h3>PACKERG</h3>
+            <h3>PACKER</h3>
             <p class="location">Baku</p>
           </span>
           <p class="vacationDescription">
@@ -143,7 +143,6 @@
             punctual Responsible and attentive approach to work Job responsibilities: Removing products from the
             refrigerator, collecting them according to a special order according to the list (invoice) Collecting […]
           </p>
-
           <a href="#">MORE</a>
         </div>
 
@@ -161,7 +160,6 @@
             hardworking, adhere to hygiene rules Duties: Cleaning at the point of sale, in additional rooms, in the
             immediate area of ​​the store (in front of the store) […]
           </p>
-
           <a href="#">MORE</a>
         </div>
 
@@ -179,7 +177,6 @@
             assigned by the direct supervisor in connection with the job Requirements: Gender: male More than 1 year of
             work experience as a driver-expeditor Driver’s license […]
           </p>
-
           <a href="#">MORE</a>
         </div>
 
@@ -200,9 +197,9 @@
             of Azerbaijani (fluent), Russian (prefer) Experience in sales (prefer) Ability to work collaboratively in a
             team. Job Responsibilities: Monitoring the quantity of the assortment in store and if necessary […]
           </p>
-
           <a href="#">MORE</a>
         </div>
+        <div class="searchResult"></div>
       </div>
     </section>
 
@@ -246,8 +243,16 @@
   <script>
     const navbar = document.querySelector(".navbar-part");
     const main = document.querySelector("section#main");
-
     main.style.paddingTop = navbar.offsetHeight + "px";
+
+    const inputSearch = document.querySelector(".inputFindJob input");
+    const searchBtn = document.querySelector(".fa-magnifying-glass");
+    const workNames = document.querySelectorAll(".workName h3")
+    const workBox = document.querySelectorAll(".vacationBox")
+    const vacationPart = document.querySelector(".vacantionPart");
+    const searchResult = document.querySelector(".searchResult");
+
   </script>
 </body>
+
 </html>

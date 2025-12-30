@@ -42,31 +42,31 @@ html {
   margin-top: 100px;
 }
 
-.careersBannerWord .inputFindJob{
+.careersBannerWord .inputFindJob {
   width: 70%;
   z-index: 10;
   position: relative;
 }
 
-.careersBannerWord .inputFindJob span{
+.careersBannerWord .inputFindJob span {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.careersBannerWord .inputFindJob i{
+.careersBannerWord .inputFindJob i {
   cursor: pointer;
   background-color: var(--light-yellow);
   width: 50px;
   height: 50px;
-  border-radius:5px ;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.careersBannerWord .inputFindJob input{
-  border-radius:5px ;
+.careersBannerWord .inputFindJob input {
+  border-radius: 5px;
   border: 1px solid #f4f4f6;
   width: 100%;
   height: 50px;
@@ -74,8 +74,8 @@ html {
   font-size: 14px;
 }
 
-.careersBannerWord .inputFindJob input:focus{
- outline: none;
+.careersBannerWord .inputFindJob input:focus {
+  outline: none;
 }
 
 .careersBannerWord p {
@@ -97,7 +97,6 @@ html {
   border-bottom: 1px solid var(--brown-color);
 }
 
-
 .careersBannerWord .linesymboldiv .circle {
   width: 7px;
   height: 7px;
@@ -111,7 +110,6 @@ html {
 .vacantionPart {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   background-color: #fff;
   padding: 5rem 10rem;
   gap: 2rem;
@@ -120,9 +118,8 @@ html {
 .vacationBox {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
-  height: 100%;
   outline: 2px solid #F6F4F4;
   padding-bottom: 3rem;
 }
@@ -133,25 +130,24 @@ html {
   padding: 0 2rem;
 }
 
-.vacationBox .workName{
+.vacationBox .workName {
   display: flex;
   flex-direction: column;
   gap: .4rem;
 }
-
 
 .vacantionPart p {
   color: #5D5D5D;
   font-size: 14px;
 }
 
-.vacationBox .location-wage{
+.vacationBox .location-wage {
   display: flex;
   align-items: center;
   gap: .6rem;
 }
 
-.vacationBox .location-wage span{
+.vacationBox .location-wage span {
   color: #5D5D5D;
   font-weight: 700;
 }
@@ -160,13 +156,12 @@ html {
   color: var(--brown-color);
   font-size: 12px;
   letter-spacing: 2px;
-  transition:  all .4s;
+  transition: all .4s;
 }
 
-.vacantionPart a:hover{
+.vacantionPart a:hover {
   color: var(--border-yellow);
 }
-
 
 .vacantionPart p.location {
   font-size: 20px;
