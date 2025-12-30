@@ -97,3 +97,34 @@ section#footer .upper-part span {
 .copyright-part span {
   font-size: 13px;
 }
+@media (max-width: 768px) {
+  section#footer {
+    padding: 50px 20px 30px 20px;
+  }
+
+  .footer-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .down-part {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .down-part .down {
+    width: 100%;
+  }
+    section#footer .down-part{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+     section#footer .down-part .down{
+      text-align: center;
+      width: 50%;
+     }
+}
