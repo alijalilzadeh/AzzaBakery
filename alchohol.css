@@ -79,18 +79,18 @@
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
-  width:65%;
+  width: 65%;
   display: flex;
   text-align: center;
 }
 
-.milkProductsImageBoxes {
+.alchoholProductsImageBoxes {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.milkProductsImageBoxes .milkProductsImageBox {
+.alchoholProductsImageBoxes .alchoholProductsImageBox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +98,7 @@
   height: 600px;
 }
 
-.milkProductsImageBoxes .milkProductsImageBox .img-box {
+.alchoholProductsImageBoxes .alchoholProductsImageBox .img-box {
   display: flex;
   position: relative;
   width: 50%;
@@ -107,38 +107,69 @@
   justify-content: center;
 }
 
-.milkProductsImageBox .img-box img {
+.alchoholProductsImageBox .img-box img,
+.alchoholProductsImageBox .img-box .whiteBg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.milkProductsImageBoxes .milkProductsImageBox .descriptionPart {
+.alchoholProductsImageBox .img-box img:first-child {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.alchoholProductsImageBox .img-box img:nth-child(2) {
+  z-index: 2;
+  width: 330px;
+  height: 330px;
+}
+
+.whiteBg {
+  z-index: 4;
+  width: 240px;
+  height: 240px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteBg span {
+  color: var(--brown-color);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.alchoholProductsImageBoxes .alchoholProductsImageBox .descriptionPart {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.5rem;
   width: 30%;
   line-height: 1.5;
 }
 
-.descriptionPart .groceryName {
+.descriptionPart .alchoholName {
   font-size: 21px;
   font-weight: 700 !important;
 }
 
-.descriptionPart .groceryName,
-.descriptionPart .groceryType {
+.descriptionPart .alchoholName,
+.descriptionPart .alchoholType {
   color: var(--brown-color);
   font-weight: 600;
 }
 
-.descriptionPart .groceryType{
+.descriptionPart .alchoholType {
   font-size: 13px;
   font-weight: 700;
 }
 
-.descriptionPart .groceryDescription {
+.descriptionPart .alchoholDescription {
   color: #605c5c;
   display: flex;
   flex-direction: column;
@@ -147,33 +178,48 @@
   font-size: 17px;
 }
 
-.descriptionPart .groceryDescription span li{
+.descriptionPart .alchoholDescription span li {
   color: #605c5c;
 }
 
-
-.milkProductsImageBox .img-box img:first-child {
-  z-index: 3;
+.alchoholCountriesLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.milkProductsImageBox .img-box img:nth-child(2) {
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.alchoholCountriesLinks span {
+  font-size: 17px;
+  color: var(--brown-color);
+  font-weight: 700;
+  border: 1px solid #d7d7d7;
+  border-radius: 25px;
+  padding: 8px 15px;
+  cursor: pointer;
 }
 
-.milkProductsImageBox .img-box img:nth-child(3) {
-  z-index: 4;
-  width: 150px;
-  height: 120px;
-  max-width: 100%;
+.alchoholCountriesLinks span.activeLink {
+  color: #F7D427;
+  border: 1px solid #F7D427;
 }
 
-.milkProductsImageBox .img-box img:nth-child(4) {
-  z-index: 2;
-  width: 330px;
-  height: 330px;
+.alchoholLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.alchoholLinks a {
+  transition: all .4s;
+  font-weight: 700;
+  color: var(--brown-color);
+  font-size: 15px;
+}
+
+.alchoholLinks a:hover {
+  color:#595959;
 }
 
 .cakeLinks {
