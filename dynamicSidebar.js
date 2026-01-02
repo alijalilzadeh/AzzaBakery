@@ -1,18 +1,17 @@
 const hamburgerIcon = document.querySelector('.fa-bars');
 const xMark = document.querySelector(".upper-part .fa-xmark")
 const hamburgerSidebar = document.querySelector(".hamburgerSidebar")
-hamburgerIcon.addEventListener("click",()=>{
+hamburgerIcon.addEventListener("click", () => {
   hamburgerSidebar.classList.remove("closing")
-    hamburgerSidebar.classList.toggle("opening");
+  hamburgerSidebar.classList.toggle("opening");
 })
 
-xMark.addEventListener("click",()=>{
-    hamburgerSidebar.classList.remove("opening");
-    hamburgerSidebar.classList.toggle("closing");
+xMark.addEventListener("click", () => {
+  hamburgerSidebar.classList.remove("opening");
+  hamburgerSidebar.classList.toggle("closing");
 })
 
 const productBoxes = document.querySelectorAll(".productBox");
-
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
@@ -27,3 +26,18 @@ const observer = new IntersectionObserver(
 );
 
 productBoxes.forEach(productBox => observer.observe(productBox));
+
+const cakeLinks = document.querySelectorAll(".cakeLinks a");
+const currentPage = window.location.pathname.split("/").pop();
+
+cakeLinks.forEach(cakeLink=>{
+  if(cakeLink.getAttribute("href") === currentPage){
+    cakeLink.classList.add("selected");
+  }
+  cakeLink.addEventListener("click",()=>{
+    cakeLink.forEach(l=>l.classList.remove("selected"));
+
+    cakeLink.classList.add("selected");
+  })
+
+})

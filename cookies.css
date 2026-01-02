@@ -115,6 +115,23 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+.cookiesImgBoxes .cookieImgBox:hover .img-part img {
+  transform: scale(1.1);
+}
+
+.cookiesImgBoxes .cookieImgBox .img-part {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+.cookiesImgBoxes .cookieImgBox .img-part img {
+  width: 100%;
+  height: 100%;
   transition: all .4s;
 }
 
@@ -135,25 +152,6 @@
   font-size: 15px;
   color: var(--brown-color);
   font-weight: 700;
-}
-
-
-.cookiesImgBoxes .cookieImgBox:hover .img-part img {
-  transform: scale(1.1);
-}
-
-.cookiesImgBoxes .cookieImgBox .img-part {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  object-fit: cover;
-}
-
-.cookiesImgBoxes .cookieImgBox .img-part img {
-  width: 100%;
-  height: 100%;
-  transition: all .4s;
 }
 
 .cookieImgBox a {
