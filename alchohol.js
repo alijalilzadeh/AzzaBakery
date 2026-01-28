@@ -56,29 +56,45 @@ const beerData = {
 }
 
 
-const countriesVodkaLinks = document.querySelectorAll(".alchoholCountriesLinks span");
-const alchoholLinksContainer = document.querySelector(".alchoholLinks");
+// bütün məhsul boxlarını götürürük
+const productBoxes = document.querySelectorAll(".alchoholProductsImageBox");
 
-countriesVodkaLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+productBoxes.forEach((box) => {
+  const countriesLinks = box.querySelectorAll(".alchoholCountriesLinks span");
+  const linksContainer = box.querySelector(".alchoholLinks");
 
-    countriesVodkaLinks.forEach(l => l.classList.remove("activeLink"));
-    link.classList.add("activeLink");
+  // hansı data istifadə ediləcəyini box-un tipinə görə seçirik
+  const alcoholType = box.querySelector(".alchoholType").textContent.trim();
+  let data;
+  switch(alcoholType) {
+    case "VODKA": data = vodkaData; break;
+    case "WINE": data = wineData; break;
+    case "COGNAC": data = cogncaData; break;
+    case "WHISKEY": data = whiskeyData; break;
+    case "TEQUILA": data = tequilaData; break;
+    case "OTHER DRINKS": data = otherDrinks; break;
+    case "BEER": data = beerData; break;
+    default: data = {};
+  }
 
-    const countryName = link.textContent.trim();
+  countriesLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      countriesLinks.forEach(l => l.classList.remove("activeLink"));
+      link.classList.add("activeLink");
 
-    alchoholLinksContainer.innerHTML = "";
-    if (vodkaData[countryName]) {
-      vodkaData[countryName].forEach((brand) => {
-        const aTag = document.createElement("a");
-        aTag.href = "#";
-        aTag.textContent = brand;
-        alchoholLinksContainer.appendChild(aTag);
-      });
-    }
+      const countryName = link.textContent.trim();
+      linksContainer.innerHTML = "";
+
+      if (data[countryName]) {
+        data[countryName].forEach((brand) => {
+          const aTag = document.createElement("a");
+          aTag.href = "#";
+          aTag.textContent = brand;
+          linksContainer.appendChild(aTag);
+        });
+      }
+    });
   });
+
+  if (countriesLinks[0]) countriesLinks[0].click();
 });
-countriesVodkaLinks[0].click();
-
-
-// console.log(vodkaData.Ukraine[0],vodkaData.Ukraine[1])

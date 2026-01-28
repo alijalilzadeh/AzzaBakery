@@ -223,10 +223,10 @@
   align-items: center;
   justify-content: center;
   background-color: #F6F4F4;
+  margin: 3rem 0;
 }
 
 .bannerDescription .bannerDescriptionBox {
-  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,33 +236,33 @@
   gap: 2rem;
   padding: 30px;
   margin: 4rem 0;
+  width: 80%;
 }
 
 .bannerDescription .bannerDescriptionBox .bannerImg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
   z-index: 1;
+  width: 400px;
 }
 
-.bannerDescription .bannerDescriptionBox .bannerImg {
-  width: 500px;
+.bannerDescriptionBox .bannerImg img{
+  width: 100%;
 }
 
 .bannerDescription .bannerDescriptionBox h2 {
   color: var(--brown-color);
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   z-index: 15;
 }
 
 .bannerDescription .bannerDescriptionBox p {
-  font-size: 16px;
+  font-size: 18px;
   z-index: 15;
   color: #4F4D4C;
   top: 65%;
-
 }
 
 .bannerDescription .bannerDescriptionBox h2,

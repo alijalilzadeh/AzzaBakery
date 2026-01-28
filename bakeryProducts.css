@@ -188,7 +188,8 @@
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  margin-bottom: 70px;
+  margin: 40px 30px;
+  flex-wrap: wrap;
 }
 
 .cakeLinks a {

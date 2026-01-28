@@ -120,16 +120,18 @@
 
 
 .cakesImgBoxes .cakeImgBox .img-part {
-  width: 100%;
-  height: 70%;
+  width: 314px;
+  height: 310px;
   overflow: hidden;
   position: relative;
+
 }
 
 .cakesImgBoxes .cakeImgBox .img-part img {
   width: 100%;
   height: 100%;
   transition: all .4s;
+  object-fit: cover;
 }
 
 .cakesImgBoxes .cakeImgBox span {
@@ -190,7 +192,8 @@
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  margin-bottom: 70px;
+  margin: 40px 30px;
+  flex-wrap: wrap;
 }
 
 .cakeLinks a {
