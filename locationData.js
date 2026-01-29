@@ -411,27 +411,27 @@ data = [
       },
       {
         "id": 63,
-        "address": "Fatali Khan Khoyski Avenue, Narimanov District",
-        "latitude": 40.402806,
-        "longitude": 49.863306
+        "address": "183A M. Qashqai Street, Narimanov District",
+        "latitude": 40.401417,
+        "longitude": 49.839917
       },
       {
         "id": 64,
-        "address": "22/2A Khoroqlu Rahimov Street, Narimanov District",
-        "latitude": 40.400250,
-        "longitude": 49.858722
+        "address": "30D H. Aliyev Avenue, Narimanov District",
+        "latitude": 40.398028,
+        "longitude": 49.874528
       },
       {
         "id": 65,
-        "address": "Fatali Khan Khoyski Avenue, Narimanov District",
-        "latitude": 40.402806,
-        "longitude": 49.863306
+        "address": "14 Y.V. Chemenzeminli Street, Narimanov District",
+        "latitude": 40.401278,
+        "longitude": 49.831694
       },
       {
         "id": 66,
-        "address": "22/2A Khoroqlu Rahimov Street, Narimanov District",
-        "latitude": 40.400250,
-        "longitude": 49.858722
+        "address": "38 Agha Neymatulla Street, Narimanov District",
+        "latitude": 40.401333,
+        "longitude": 49.874056
       },
     ]
   }
