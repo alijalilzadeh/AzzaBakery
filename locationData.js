@@ -434,7 +434,348 @@ data = [
         "longitude": 49.874056
       },
     ]
-  }
+  },
+  {
+    "region": "Nasimi",
+    "locations": [
+      {
+        "id": 67,
+        "address": "998 Block, Jalil Mammadguluzade Street, Nasimi District",
+        "latitude": 40.395556,
+        "longitude": 49.828694
+      },
+      {
+        "id": 68,
+        "address": "122 E Mirali Qashgay Street, Nasimi District",
+        "latitude": 40.394472,
+        "longitude": 49.842639
+      },
+      {
+        "id": 69,
+        "address": "131 Nizami Street, Nasimi District",
+        "latitude": 40.377444,
+        "longitude": 49.854694
+      },
+      {
+        "id": 70,
+        "address": "71B 28 May Street, Nasimi District",
+        "latitude": 40.379694,
+        "longitude": 49.858306
+      },
+      {
+        "id": 71,
+        "address": "70 Javadkhan Street, Nasimi District",
+        "latitude": 40.418194,
+        "longitude": 49.817639
+      },
+      {
+        "id": 72,
+        "address": "30 Bakikhanov Street, Nasimi District",
+        "latitude": 40.388556,
+        "longitude": 49.835111
+      },
+      {
+        "id": 73,
+        "address": "18 Mir Jalal Street, Nasimi District",
+        "latitude": 40.415833,
+        "longitude": 49.807417
+      },
+      {
+        "id": 74,
+        "address": "1058 Tbilisi Avenue, Nasimi District",
+        "latitude": 40.397056,
+        "longitude": 49.815056
+      },
+      {
+        "id": 75,
+        "address": "34A A. Maharramov Street, Nasimi District",
+        "latitude": 40.408806,
+        "longitude": 49.809556
+      },
+      {
+        "id": 76,
+        "address": "53F R. Behbudov Street, Nasimi District",
+        "latitude": 40.380056,
+        "longitude": 49.843806
+      },
+      {
+        "id": 77,
+        "address": "62 Khan Shushinski Street, Nasimi District",
+        "latitude": 40.396389,
+        "longitude": 49.837056
+      },
+      {
+        "id": 78,
+        "address": "146 Azadlig Avenue, Nasimi District",
+        "latitude": 40.393944,
+        "longitude": 49.840444
+      },
+      {
+        "id": 79,
+        "address": "17, 20 Yanvar Street, 5th Microdistrict, Nasimi District",
+        "latitude": 40.413139,
+        "longitude": 49.810111
+      },
+    ]
+  },
+  {
+    "region": "Nizami",
+    "locations": [
+      {
+        "id": 80,
+        "address": "70 Bekir Chobanzade Street, Nizami District",
+        "latitude": 40.411417,
+        "longitude": 49.930583
+      },
+      {
+        "id": 81,
+        "address": "118C Nasimi Street, Nizami District",
+        "latitude": 40.413806,
+        "longitude": 49.941333
+      },
+      {
+        "id": 82,
+        "address": "26A Tofig Abasov Street, Nizami District",
+        "latitude": 40.419361,
+        "longitude": 49.933222
+      },
+      {
+        "id": 83,
+        "address": "1 Gara Garaev Avenue, Nizami District",
+        "latitude": 40.419556,
+        "longitude": 49.925639
+      },
+      {
+        "id": 84,
+        "address": "2524 Yard Sharifli Street, Nizami District",
+        "latitude": 40.414556,
+        "longitude": 49.948556
+      },
+      {
+        "id": 85,
+        "address": "2566 E. Suleymanov Street, Nizami District",
+        "latitude": 40.409278,
+        "longitude": 49.956361
+      },
+      {
+        "id": 86,
+        "address": "10 Qara Qarayev Avenue, Nizami District",
+        "latitude": 40.418361,
+        "longitude": 49.927972
+      },
+      {
+        "id": 87,
+        "address": "48 K. Balakishiyev Street, Nizami District",
+        "latitude": 40.409194,
+        "longitude": 49.940306
+      },
+    ]
+  },
+  {
+    "region": "Sabail",
+    "locations": [
+      {
+        "id": 88,
+        "address": "Sabail district, intersection of Khagani and Pushkin streets",
+        "latitude": 40.375694,
+        "longitude": 49.852444
+      },
+      {
+        "id": 89,
+        "address": "8 Alibey Huseynzade Street, Bayil Settlement, Sabail District (Sabah Residence)",
+        "latitude": 40.351167,
+        "longitude": 49.832639
+      },
+      {
+        "id": 90,
+        "address": "Badamdar UTS, Massif 2, Badamdar Settlement, Sabail District",
+        "latitude": 40.352167,
+        "longitude": 49.813278
+      },
+      {
+        "id": 91,
+        "address": "84B Khagani, Sabail District",
+        "latitude": 40.375944,
+        "longitude": 49.853306
+      },
+      {
+        "id": 92,
+        "address": "1 Apartment Complex, Badamdar Settlement, Sabail District",
+        "latitude": 40.341500,
+        "longitude": 49.810194
+      },
+      {
+        "id": 93,
+        "address": "Cross of S. Vurgun and Khagani Streets, Sabail District",
+        "latitude": 40.372639,
+        "longitude": 49.842222
+      },
+    ]
+  },
+  {
+    "region": "Sabunchi",
+    "locations": [
+      {
+        "id": 94,
+        "address": "Baku Ring Road, Nardaran Settlement, Sabunchu District",
+        "latitude": 40.581944,
+        "longitude": 49.976444
+      },
+      {
+        "id": 95,
+        "address": "141A Mammadyarov, Mashtagha, Sabunchu District",
+        "latitude": 40.523389,
+        "longitude": 49.993583
+      },
+      {
+        "id": 96,
+        "address": "Highway 20, Zabrat Settlement, Sabunchu District",
+        "latitude": 40.462944,
+        "longitude": 49.942278
+      },
+      {
+        "id": 97,
+        "address": "17 S. Gojayev Street, Bakikhanov Settlement, Sabunchu District",
+        "latitude": 40.415389,
+        "longitude": 49.966222
+      },
+      {
+        "id": 98,
+        "address": "60 S. Mehmandarov Street, Bakikhanov Settlement, Sabunchu District",
+        "latitude": 40.426694,
+        "longitude": 49.957833
+      },
+    ]
+  },
+  {
+    "region": "Sumgait",
+    "locations": [
+      {
+        "id": 99,
+        "address": "Boulevard 67, Sumgait City",
+        "latitude": 40.593667,
+        "longitude": 49.683278
+      },
+      {
+        "id": 100,
+        "address": "55/10 Babek Street, 13th District, Sumgait City",
+        "latitude": 40.566750,
+        "longitude": 49.695972
+      },
+      {
+        "id": 101,
+        "address": "1/22, 36th Block, Sulh Street, Sumgait City",
+        "latitude": 40.566806,
+        "longitude": 49.695917
+      },
+      {
+        "id": 102,
+        "address": "N. Narimanov Street, 1st Microdistrict, Sumgait City",
+        "latitude": 40.584250,
+        "longitude": 49.680278
+      },
+    ]
+  },
+  {
+    "region": "Surakhany",
+    "locations": [
+      {
+        "id": 103,
+        "address": "140D, Yeni Gunashli Settlement, Surakhani District",
+        "latitude": 40.381750,
+        "longitude": 49.977722
+      },
+      {
+        "id": 104,
+        "address": "232 S. Gojayev Street, Surakhani District",
+        "latitude": 40.405250,
+        "longitude": 49.971778
+      },
+      {
+        "id": 105,
+        "address": "35A S. Bahlulzadeh Street, Bulbul Settlement, Surakhani District",
+        "latitude": 40.435333,
+        "longitude": 49.977333
+      },
+    ]
+  },
+  {
+    "region": "Yasamal",
+    "locations": [
+      {
+        "id": 106,
+        "address": "82C Alasgar Alakbarov Street, Yasamal District",
+        "latitude": 40.368639,
+        "longitude": 49.818389
+      },
+      {
+        "id": 107,
+        "address": "2 A. Haqverdiev Street, Yasamal District",
+        "latitude": 40.380222,
+        "longitude": 49.817278
+      },
+      {
+        "id": 108,
+        "address": "7 A. Salamzade Street, 1055th Street, Yasamal District",
+        "latitude": 40.392972,
+        "longitude": 49.809833
+      },
+      {
+        "id": 109,
+        "address": "3 Asad Akhmedov Street, Yasamal District",
+        "latitude": 40.390056,
+        "longitude": 49.787917
+      },
+      {
+        "id": 110,
+        "address": "3166 Hasan bey Zardabi Street, Yasamal District",
+        "latitude": 40.395194,
+        "longitude": 49.806694
+      },
+      {
+        "id": 111,
+        "address": "53 Zahid Khalilov Street, Yasamal District",
+        "latitude": 40.383472,
+        "longitude": 49.810667
+      },
+      {
+        "id": 112,
+        "address": "5 A. Haqverdiev Street, Yasamal District",
+        "latitude": 40.380472,
+        "longitude": 49.813583
+      },
+      {
+        "id": 113,
+        "address": "Cross of Talibli and Bunyadzade Streets, Yasamal District",
+        "latitude": 40.393528,
+        "longitude": 49.796083
+      },
+      {
+        "id": 114,
+        "address": "71 A. M. Sharifzadeh Street, Yasamal District",
+        "latitude": 40.383583,
+        "longitude": 49.803417
+      },
+      {
+        "id": 115,
+        "address": "11/13 M. Mushfig Street, Yasamal District",
+        "latitude": 40.365444,
+        "longitude": 49.819556
+      },
+      {
+        "id": 116,
+        "address": "12F M. Nakhchyvani Street, Yasamal District",
+        "latitude": 40.483278,
+        "longitude": 49.827278
+      },
+      {
+        "id": 117,
+        "address": "59A H. Zardabi Street, Yasamal District",
+        "latitude": 40.389500,
+        "longitude": 49.805694
+      }
+    ]
+  },
 ]
 
 const mapFrame = document.querySelector(".map-wrapper iframe");
