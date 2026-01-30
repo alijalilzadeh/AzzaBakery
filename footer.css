@@ -106,9 +106,10 @@ section#footer .upper-part span {
 .productBox {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 2s ease !important;
+  transition: all 1s ease !important;
   margin: 50px 0;
 }
+
 .productBox.active {
   opacity: 1;
   transform: translateY(0);
@@ -117,7 +118,7 @@ section#footer .upper-part span {
 .cakeLinks a.selected {
   color: var(--light-yellow);
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   section#footer {
     padding: 50px 20px 30px 20px;
   }
@@ -131,7 +132,9 @@ section#footer .upper-part span {
   }
 
   .down-part {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 3rem;
   }
 

@@ -30,6 +30,7 @@
 }
 
 .hamburgerBox .upper-part {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,12 +51,12 @@
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 5px;
-   -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
 }
 
- .hamburgerBox .sections-part::-webkit-scrollbar {
+.hamburgerBox .sections-part::-webkit-scrollbar {
   display: none;
-} 
+}
 
 .sections-part .underproducts {
   display: none;
@@ -82,5 +83,33 @@
 
 .hamburgerSidebar svg:hover .icon-path {
   fill: var(--light-yellow) !important;
+}
 
+@media(max-width:800px) {
+  .hamburgerSidebar {
+    width: 100% !important;
+    max-width: 100vw;
+    transform: translateX(-1000px);
+  }
+
+  .hamburgerSidebar.active {
+    transform: translateX(0) !important;
+  }
+
+  .hamburgerBox {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .hamburgerSidebar.closing {
+    transform: translateX(-1000px);
+    transition: all .8s;
+  }
+
+  .hamburgerBox .upper-part {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

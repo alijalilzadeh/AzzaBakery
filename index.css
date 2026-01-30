@@ -854,3 +854,7 @@ section#newsFromAzza {
     height: 100%;
   }
 }
+
+@media(max-width:440px){
+  
+}

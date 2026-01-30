@@ -204,6 +204,10 @@ section#main {
   border-radius: 22px;
 }
 
+.searchAzzaStoresBox .districtsOfBaku a.selectedBorder{
+  border: 1px solid var(--light-yellow) !important;
+}
+
 .searchAzzaStoresBox .districtsOfBaku a:active {
   border: 1px solid var(--light-yellow);
 }
@@ -226,7 +230,6 @@ section#main {
 
 .searchAzzaStoresBox .inputPart input::placeholder {
   font-size: 16px;
-
 }
 
 .searchAzzaStoresBox .inputPart input:focus {
@@ -313,6 +316,9 @@ section#main {
   cursor: pointer;
   transition: all .4s;
   position: relative;
+}
+.underSection .underLinks.selected{
+  background-color:#F5EFD7;
 }
 
 .underSection .underLinks:hover {

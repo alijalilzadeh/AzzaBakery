@@ -784,13 +784,16 @@ const locationBoxes = document.querySelectorAll(".locationLinks .underLinks");
 locationBoxes.forEach(box => {
   box.addEventListener("click", () => {
     const locationName = box.querySelector("p").innerText.trim();
-
+    locationBoxes.forEach(box => {
+      box.classList.remove("selected");
+    })
+    box.classList.toggle("selected");
     let foundLat = null;
     let foundLong = null;
 
     for (const region of data) {
       const foundLocation = region.locations.find(loc => loc.address === locationName);
-
+    
       if (foundLocation) {
         foundLat = foundLocation.latitude;
         foundLong = foundLocation.longitude;
