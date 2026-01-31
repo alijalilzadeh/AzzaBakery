@@ -1,0 +1,258 @@
+:root {
+  --yellow-color: #F7941D;
+  --light-yellow: #F6D119;
+  --border-yellow: #F9AF19;
+  --navbar-background: #F7F7F7;
+  --brown-color: #4B2613;
+  --link-icons: #302215;
+}
+
+.productType {
+  width: 100% !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--navbar-background);
+}
+
+.topTitle {
+  padding: 30px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.topTitle .circle-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+}
+
+.topTitle .circle-line .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--brown-color);
+}
+
+.topTitle .circle-line .line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:40px;
+  border-bottom: 1.4px solid var(--brown-color);
+}
+
+.productType .reverseIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left:30px ;
+
+}
+.productType .reverseIcon i{
+  font-size: 20px;
+  color: var(--brown-color);
+  cursor: pointer;
+  margin-right: 20px;
+  transition: all .4s;
+}
+
+.topTitle h2 {
+  font-size: 21px;
+  color: var(--brown-color);
+  font-weight: 700;
+}
+
+.detaiContent{
+  width: 100%;
+  height: 100%;
+}
+.detaiContent .detailBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 40px 0;
+}
+
+.detaiContent .detailBox .paginationContent{
+  width: 50%;
+}
+
+.detaiContent .detailBox .productDetailInfo{
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detaiContent .detailBox .productDetailInfo div{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detailBox .productDetailInfo div .product-name{
+  font-size: 42px;
+  color: var(--brown-color);
+}
+
+.detailBox .productDetailInfo div .product-price{
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  color: var(--brown-color);
+}
+
+.detailBox .productDetailInfo div .product-price span:nth-child(1),.product-ingredients h3,.product-size span:first-child{
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brown-color);
+}
+.detailBox .productDetailInfo div .product-price span:nth-child(2){
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.product-ingredients p,.product-size span:nth-child(2){
+  font-weight: 500;
+  color: #787878;
+}
+
+.productDetailInfo button{
+  color: var(--brown-color);
+  border: none;
+  width: 180px;
+  padding: 15px 0;
+  cursor: pointer;
+  background-color: var(--light-yellow);
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition:  all .4s;
+}
+
+.productDetailInfo button:hover{
+  color: #F6D119;
+  background-color: var(--brown-color);
+}
+.cakesImgBoxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.cakesImgBoxes .cakeImgBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all .4s;
+}
+
+.cakesImgBoxes .cakeImgBox:hover .img-part img {
+  transform: scale(1.1);
+}
+
+.cakesImgBoxes .cakeImgBox .img-part {
+  width: 314px;
+  height: 310px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cakesImgBoxes .cakeImgBox .img-part img {
+  width: 100%;
+  height: 100%;
+  transition: all .4s;
+  object-fit: cover;
+}
+
+.cakesImgBoxes .cakeImgBox span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: .7rem;
+}
+
+.cakesImgBoxes .cakeImgBox span .cakeType {
+  font-size: 12px;
+  color: #5a5757;
+  font-weight: 700;
+}
+
+.cakesImgBoxes .cakeImgBox span .cakename {
+  font-size: 15px;
+  color: var(--brown-color);
+  font-weight: 700;
+}
+
+.cakeImgBox a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: wrap;
+  padding: 20px 10px;
+  width: 110px;
+  height: 100px;
+  background-color: rgba(244, 234, 185, .95);
+  z-index: 20;
+  color: var(--brown-color);
+  font-size: 12px;
+  font-weight: 600;
+  transition: all .4s;
+  letter-spacing: 2px;
+}
+
+.cakeImgBox:hover a {
+  opacity: 1;
+}
+
+.cakeImgBox a:hover {
+  color: #666666;
+}
+
+.cakeLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.cakeLinks a {
+  font-size: 12px;
+  color: var(--brown-color);
+  font-weight: 700;
+  transition: all .4s;
+}
+
+.cakeLinks a:hover {
+  color: var(--light-yellow);
+}
