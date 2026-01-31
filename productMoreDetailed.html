@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="AzzaNavbar.css">
   <link rel="stylesheet" href="dynamicSidebar.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="icon" href="logoImages/AzzaStoreLogo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -109,7 +111,9 @@
   <section id="main">
     <div class="productType">
       <div class="reverseIcon">
-        <i class="fa-solid fa-arrow-left"></i>
+        <a href="">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
       </div>
       <div class="topTitle">
         <h2>PRODUCTS</h2>
@@ -123,19 +127,30 @@
     </div>
     <div class="detaiContent">
       <div class="detailBox">
-        <div class="paginationContent">
+        <div class="swiper paginationContent">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="" alt="Noisette Cake">
+              <img src="MoreDetailedProducts/paginationCake/noisette.jpg" alt="Noisette Cake">
             </div>
             <div class="swiper-slide">
-              <img src="" alt="Noisette Cake">
+              <img src="MoreDetailedProducts/paginationCake/noisette2.jpg" alt="Noisette Cake">
             </div>
             <div class="swiper-slide">
-              <img src="" alt="Noisette Cake">
+              <img src="MoreDetailedProducts/paginationCake/noisette3.jpg" alt="Noisette Cake">
             </div>
           </div>
+
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+
+          <div class="swiper-pagination"></div>
         </div>
+
         <div class="productDetailInfo">
           <div>
             <h2 class="product-name">Noisette</h2>
