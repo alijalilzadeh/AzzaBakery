@@ -56,7 +56,6 @@
   border-bottom: 1px solid var(--brown-color);
 }
 
-
 .cakesBannerWord .linesymboldiv .circle {
   width: 7px;
   height: 7px;
@@ -86,7 +85,7 @@
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 50%;
+  width: 100%;
   display: flex;
   text-align: center;
   align-items: center;
@@ -103,35 +102,30 @@
   padding: 0 4rem;
 }
 
-.cakesImgBoxes .cakeImgBox {
-  width: 100%;
-  height: 100%;
+.cakeImgBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
-  transition: all .4s;
+  cursor: pointer;
 }
 
 .cakesImgBoxes .cakeImgBox:hover .img-part img {
   transform: scale(1.1);
 }
 
-
-.cakesImgBoxes .cakeImgBox .img-part {
-  width: 314px;
-  height: 310px;
-  overflow: hidden;
+.cakeImgBox .img-part {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
   position: relative;
-
+  overflow: hidden;
 }
 
-.cakesImgBoxes .cakeImgBox .img-part img {
+.cakeImgBox .img-part img {
   width: 100%;
   height: 100%;
-  transition: all .4s;
   object-fit: cover;
+  transition: transform .4s ease;
 }
 
 .cakesImgBoxes .cakeImgBox span {
@@ -152,8 +146,6 @@
   color: var(--brown-color);
   font-weight: 700;
 }
-
-
 
 .cakeImgBox a {
   position: absolute;
@@ -185,7 +177,6 @@
 .cakeImgBox a:hover {
   color: #666666;
 }
-
 
 .cakeLinks {
   display: flex;

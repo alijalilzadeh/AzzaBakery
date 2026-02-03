@@ -113,3 +113,49 @@
     justify-content: space-between;
   }
 }
+
+/* Responsive codes */
+@media (max-width: 1024px) {
+  .cakesImgBoxes {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 2rem;
+    gap: 1.5rem;
+  }
+
+  .cakesImgBoxes .cakeImgBox .img-part {
+    width: 100%;
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerText {
+    width: 78% !important;
+  }
+
+  .mainContentPart {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+  }
+
+  .mainContentPart .productBox .img-part {
+    height: 240px;
+  }
+
+  .cakeLinks {
+    flex-direction: column;
+    gap: .3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContentPart {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 1.2rem;
+  }
+
+  .mainContentPart .productBox .img-part {
+    height: 220px;
+  }
+}
