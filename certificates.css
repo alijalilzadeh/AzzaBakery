@@ -24,7 +24,7 @@ html {
   padding: 100px 63px;
 }
 
-section#main{
+section#main {
   margin: 120px 0 80px 0;
 }
 
@@ -103,4 +103,55 @@ section#main{
 
 .img-part img:hover {
   transform: scale(1.1);
+}
+
+@media(max-width:768px) {
+  .certificatesBannerWord {
+    width: 100%;
+    background-color: var(--navbar-background);
+  }
+
+  .certificatesBannerWord p {
+    font-size: 26px;
+  }
+
+  .certificatesImagePart {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+  .certificatesImagePart .firstCertificate,
+  .certificatesImagePart .secondCertificate {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .certificatesImagePart .secondCertificate{
+    flex-direction: column !important;
+
+  }
+
+  .certificatesImagePart .certificateP {
+    font-size: 21px;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .certificatesImagePart .img-part{
+    width: 100%;
+  }
+  .certificatesImagePart .img-part img{
+    width: 60%;
+  }
+}
+
+@media(max-width : 480px){
+   .certificatesImagePart .img-part{
+    width: 100%;
+  }
+  .certificatesImagePart .img-part img{
+    width: 100%;
+  }
 }

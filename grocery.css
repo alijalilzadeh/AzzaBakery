@@ -189,3 +189,110 @@
 .cakeLinks a:hover {
   color: var(--light-yellow);
 }
+
+@media (max-width: 768px) {
+  .groceryImageBoxes{
+    padding: 0 !important;
+  }
+
+  .groceryImageBoxes .groceryImageBox {
+    display: flex;
+    flex-direction: column !important;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .groceryImageBoxes .groceryImageBox .descriptionPart {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .descriptionPart .groceryDescription {
+    text-align: center;
+  }
+
+  .groceryImageBoxes .groceryImageBox .img-box {
+    width:100%;
+    height: 600px;
+    position: relative;
+  }
+
+  /* Şəkilləri mərkəzdə saxla amma ölçüləri kiçilt */
+  .groceryImageBox .img-box img:first-child {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .groceryImageBox .img-box img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .groceryImageBox .img-box img:nth-child(3) {
+    width: 110px;
+    height: auto;
+  }
+
+  .groceryImageBox .img-box img:nth-child(4) {
+   display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .groceryImageBoxes .groceryImageBox {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .groceryImageBoxes .groceryImageBox .img-box {
+    width: 100%;
+    height: 260px; 
+  }
+
+  .groceryImageBox .img-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .groceryImageBox .img-box img:first-child {
+    width: 85%;
+    max-width: 260px;
+  }
+
+  .groceryImageBox .img-box img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .groceryImageBox .img-box img:nth-child(3) {
+    width: 110px;
+  }
+
+  .groceryImageBox .img-box img:nth-child(4) {
+    display: none;
+  }
+
+  .groceryImageBoxes .groceryImageBox .descriptionPart {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .descriptionPart .groceryName {
+    font-size: 18px;
+  }
+
+  .descriptionPart .groceryType {
+    font-size: 12px;
+  }
+
+  .descriptionPart .groceryDescription {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+}

@@ -22,7 +22,7 @@ html {
   gap: 2rem;
   background-color: hsla(0, 0%, 100%, .9);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, .25);
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 section#main{
@@ -125,11 +125,35 @@ section#main{
  color: var(--border-yellow);
 }
 
-
-
 .right-content .corporateInfo p,
 .right-content .corporateInfo ul li {
   color: #4F4F4F;
+}
+
+@media(max-width:1024px){
+  .azzaFormPart{
+    width: 100% !important;
+  }
+  .formcontent{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;    
+  }
+  .formcontent .left-content,.formcontent .right-content {
+    width: 100% !important;
+  }
+  .azzaFormPart .azzaFormBox{
+    width: 100% !important;
+  }
+  .azzaFormPart .azzaFormBox h3{
+    font-size: 26px;
+  }
+  .azzaFormPart .right-content {
+    gap: 1rem ;
+  }
+  .azzaFormPart .right-content p,.azzaFormPart .right-content li{
+    font-size: 15px;
+  }
 }
 
 /* <div class="azzaFormPart">

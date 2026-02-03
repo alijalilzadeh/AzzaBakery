@@ -177,3 +177,114 @@
 .cakeLinks a:hover{
 color: var(--light-yellow);
 }
+
+@media (max-width: 768px) {
+  .drinkImageBoxes {
+    padding: 0 !important;
+  }
+
+  .drinkImageBoxes .drinkImageBox {
+    display: flex;
+    flex-direction: column !important;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .drinkImageBoxes .drinkImageBox .descriptionPart {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .descriptionPart .groceryDescription {
+    text-align: center;
+  }
+
+  .drinkImageBoxes .drinkImageBox .img-box {
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+
+  .drinkImageBox .img-box img:first-child {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .drinkImageBox .img-box img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .drinkImageBox .img-box img:nth-child(3) {
+    width: 110px;
+    height: auto;
+  }
+
+  .drinkImageBox .img-box img:nth-child(4) {
+    display: none;
+  }
+  .drinkImageBox .groceryDescription{
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .drinkImageBoxes .drinkImageBox {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .drinkImageBoxes .drinkImageBox .img-box {
+    width: 100%;
+    height: 260px;
+  }
+
+  .drinkImageBox .img-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .drinkImageBox .img-box img:first-child {
+    width: 85%;
+    max-width: 260px;
+  }
+
+  .drinkImageBox .img-box img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .drinkImageBox .img-box img:nth-child(3) {
+    width: 110px;
+  }
+
+  .drinkImageBox .img-box img:nth-child(4) {
+    display: none;
+  }
+
+  .drinkImageBoxes .drinkImageBox .descriptionPart {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .descriptionPart .groceryName {
+    font-size: 18px;
+  }
+
+  .descriptionPart .groceryType {
+    font-size: 12px;
+  }
+
+  .descriptionPart .groceryDescription {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+}

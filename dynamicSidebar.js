@@ -42,9 +42,17 @@ cakeLinks.forEach(cakeLink => {
 
 })
 function figuringResponsive() {
+  // Banner word
   const existingContent = document.querySelector(".mainCakeImagePart");
   const existingContentImg = document.querySelector(".mainCakeImagePart .img-part img")
   const mainSection = document.getElementById("main");
+  const bakeryType = document.querySelectorAll(".mainCakeImagePart p");
+  let bakeType = "";
+  bakeryType.forEach(type => {
+    if (type !== "PRODUCTS") {
+      bakeType = type;
+    }
+  })
 
   if (!document.querySelector(".responsiveViewContent")) {
     const responsiveViewContent = document.createElement("div");
@@ -58,7 +66,7 @@ function figuringResponsive() {
             <div class="circle"></div>
             <div class="line"></div>
           </div>
-          <h2 class="azzaProductType">CAKES</h2>
+          <h2 class="azzaProductType">${bakeType.innerText}</h2>
           <div class="circle-line">
             <div class="line"></div>
             <div class="circle"></div>
