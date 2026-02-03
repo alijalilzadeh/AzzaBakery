@@ -48,7 +48,7 @@ function figuringResponsive() {
   const mainSection = document.getElementById("main");
   const bakeryType = document.querySelectorAll(".mainCakeImagePart p");
   let bakeType = "";
-  bakeryType.forEach(type => {
+  bakeryType.forEach((type,index) => {
     if (type !== "PRODUCTS") {
       bakeType = type;
     }

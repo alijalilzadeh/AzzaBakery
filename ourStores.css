@@ -204,7 +204,7 @@ section#main {
   border-radius: 22px;
 }
 
-.searchAzzaStoresBox .districtsOfBaku a.selectedBorder{
+.searchAzzaStoresBox .districtsOfBaku a.selectedBorder {
   border: 1px solid var(--light-yellow) !important;
 }
 
@@ -317,8 +317,9 @@ section#main {
   transition: all .4s;
   position: relative;
 }
-.underSection .underLinks.selected{
-  background-color:#F5EFD7;
+
+.underSection .underLinks.selected {
+  background-color: #F5EFD7;
 }
 
 .underSection .underLinks:hover {
@@ -343,4 +344,79 @@ section#main {
   border: none !important;
   display: flex;
   justify-content: flex-end;
+}
+
+@media(max-width :768px) {
+  .searchAzzaStoresBox {
+    width: 100%;
+    padding: 0 1.4rem 1.4rem 1.4rem !important;
+  }
+
+  .searchAzzaStoresBox h3 {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    padding: 30px 0 15px 0;
+  }
+
+  .inputPart input {
+    height: 37px !important;
+  }
+
+  .searchAzzaStoresBox .inputPart input::placeholder {
+    font-size: 14px;
+  }
+
+  .inputPart button {
+    height: 37px !important;
+  }
+
+  .searchAzzaStoresBox .districtsOfBaku h2 {
+    font-size: 14px;
+  }
+
+  .searchAzzaStoresBox .districtsOfBaku a {
+    font-size: 13px;
+  }
+
+  .map-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-wrapper .locationSections {
+    width: 100%;
+  }
+
+  .map-wrapper iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .map-wrapper .locationSections .locationLinks {
+    overflow-y: none;
+    max-height: 100%;
+  }
+
+  .map-wrapper .locationSections .locationLinks::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  .map-wrapper .locationSections .locationLinks::-webkit-scrollbar {
+    display: none;
+  }
+
+  .map-wrapper .locationSections .locationLinks::-webkit-scrollbar-track {
+    display: none;
+  }
+
+
+}
+
+@media(max-width:480px){
+ 
 }
