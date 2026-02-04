@@ -67,6 +67,8 @@
   justify-content: center;
 }
 
+
+
 .bannerWord {
   display: flex;
   align-items: center;
@@ -180,4 +182,14 @@
 
 .imageBox .right-part a:hover {
   color: #5d5b5b;
+}
+
+@media(max-width :768px) {
+  .responsiveBox .upperBox .azzaProductType{
+    font-size: 21px !important;
+    font-weight: 400 !important;
+  }
+  .responsiveBox .upperBox{
+    width: 70%;
+  }
 }

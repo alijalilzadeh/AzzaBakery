@@ -43,10 +43,10 @@ cakeLinks.forEach(cakeLink => {
 })
 function figuringResponsive() {
   // Banner word
-  const existingContent = document.querySelector(".mainCakeImagePart");
-  const existingContentImg = document.querySelector(".mainCakeImagePart .img-part img")
+  const existingContent = document.querySelector(".bannerPart");
+  const existingContentImg = document.querySelector(".bannerPart .img-part img")
   const mainSection = document.getElementById("main");
-  const bakeryType = document.querySelectorAll(".mainCakeImagePart p");
+  const bakeryType = document.querySelectorAll(".bannerPart p");
   let bakeType = "";
   bakeryType.forEach((type,index) => {
     if (type !== "PRODUCTS") {
@@ -94,6 +94,6 @@ window.addEventListener("resize", () => {
   } else {
     const responsiveEl = document.querySelector(".responsiveViewContent");
     if (responsiveEl) responsiveEl.remove();
-    document.querySelector(".mainCakeImagePart").style.display = "flex";
+    document.querySelector(".bannerPart").style.display = "flex";
   }
 });

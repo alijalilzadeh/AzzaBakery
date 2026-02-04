@@ -418,5 +418,7 @@ section#main {
 }
 
 @media(max-width:480px){
- 
+  .searchAzzaStoresBox h3{
+    text-align: center;
+  }
 }

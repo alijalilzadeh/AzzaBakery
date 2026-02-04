@@ -793,7 +793,7 @@ locationBoxes.forEach(box => {
 
     for (const region of data) {
       const foundLocation = region.locations.find(loc => loc.address === locationName);
-    
+
       if (foundLocation) {
         foundLat = foundLocation.latitude;
         foundLong = foundLocation.longitude;
@@ -807,3 +807,25 @@ locationBoxes.forEach(box => {
     }
   });
 });
+
+const locationSearchLinks = document.querySelectorAll(".districtsOfBaku a");
+
+locationSearchLinks.forEach(link => {
+  link.addEventListener("click", () => {
+   const linkName = link.innerText;
+    let latitudeLink = null;
+    let longitudeLink = null;
+    for (let region of data) {
+      if (region.region === linkName) {
+        latitudeLink = region.locations[0].latitude;
+        longitudeLink = region.locations[0].longitude;
+        break;
+      }
+
+    }
+    if (latitudeLink && longitudeLink) {
+      mapFrame.src = `https://www.google.com/maps?q=${latitudeLink},${longitudeLink}&z=16&output=embed`
+
+    }
+  })
+})

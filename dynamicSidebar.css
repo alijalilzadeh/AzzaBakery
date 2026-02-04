@@ -277,4 +277,8 @@
   .mainContentPart .productBox .img-part {
     height: 220px;
   }
+  .navbar-part .navbar-right .phone-number span{
+    display: none;
+  }
 }
+
