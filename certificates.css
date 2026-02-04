@@ -70,7 +70,6 @@ section#main {
   background-color: #fff;
 }
 
-.certificateBox,
 .certificateBox {
   width: 100%;
   display: flex;
@@ -79,7 +78,6 @@ section#main {
   gap: 2rem;
 }
 
-.certificateBox .certificateP p,
 .certificateBox .certificateP p {
   color: var(--brown-color);
   font-size: 21px;
@@ -121,10 +119,9 @@ section#main {
     gap: 2rem !important;
   }
 
-  .certificatesImagePart .certificateBox,
   .certificatesImagePart .certificateBox {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -151,11 +148,24 @@ section#main {
 }
 
 @media(max-width : 480px) {
+  .certificatesImagePart{
+    padding: 5rem 2rem !important;
+  }
   .certificatesImagePart .img-part {
     width: 100%;
+    padding: 0 4rem !important;
   }
 
   .certificatesImagePart .img-part img {
     width: 100%;
+  }
+  .certificateBox{
+    width: 100% !important;
+  }
+  .certificateBox .certificateP{
+    width: 100% !important;
+  }
+  .certificateBox .certificateP p{
+    width: 100% !important;
   }
 }
