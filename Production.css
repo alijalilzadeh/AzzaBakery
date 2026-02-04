@@ -399,3 +399,14 @@
     letter-spacing: 3px;
   }
 }
+
+@media(max-width:480px){
+  .bannerDescription .bannerDescriptionBox{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem !important;
+  }
+  .bannerDescription .bannerDescriptionBox p {
+    margin-top: 20px;
+  }
+}

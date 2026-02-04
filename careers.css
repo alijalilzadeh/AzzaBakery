@@ -183,10 +183,53 @@ html {
 .vacationBox img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-.responsiveBox .upperBox {
-  width: 100% !important;
+.responsiveBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box; /* padding daxil etmək üçün */
+  padding: 10px;
+}
+
+.responsiveBox .responsiveInput {
+  width: 70%;
+  z-index: 10;
+  position: relative;
+}
+
+.responsiveBox .responsiveInput span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.responsiveBox .responsiveInput i {
+  cursor: pointer;
+  background-color: var(--light-yellow);
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsiveBox .responsiveInput input {
+  border-radius: 2px;
+  border: 1px solid #ceced2;
+  width: 100%;
+  height: 50px;
+  text-indent: 10px;
+  font-size: 14px;
+}
+
+.responsiveBox .responsiveInput input:focus {
+  outline: none;
 }
 
 @media(max-width:768px) {
@@ -217,7 +260,7 @@ html {
     display: grid;
     grid-template-columns:1fr;
     background-color: #fff;
-    padding: 1rem;
+    padding: 3rem 1rem;
     gap: 2rem;
   }
   .vacationBox {
@@ -228,10 +271,20 @@ html {
   .vacationBox .img-part{
     width: 100%;
     height:450px ;
+
   }
   .vacationBox .img-part img{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+  .responsiveBox .responsiveInput{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .responsiveBox .responsiveInput input {
+  width: 100% !important;
+}
 }

@@ -70,8 +70,8 @@ section#main {
   background-color: #fff;
 }
 
-.firstCertificate,
-.secondCertificate {
+.certificateBox,
+.certificateBox {
   width: 100%;
   display: flex;
   align-items: center;
@@ -79,8 +79,8 @@ section#main {
   gap: 2rem;
 }
 
-.firstCertificate .certificateP p,
-.secondCertificate .certificateP p {
+.certificateBox .certificateP p,
+.certificateBox .certificateP p {
   color: var(--brown-color);
   font-size: 21px;
   font-weight: 700;
@@ -120,38 +120,42 @@ section#main {
     flex-direction: column;
     gap: 2rem !important;
   }
-  .certificatesImagePart .firstCertificate,
-  .certificatesImagePart .secondCertificate {
+
+  .certificatesImagePart .certificateBox,
+  .certificatesImagePart .certificateBox {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
-  .certificatesImagePart .secondCertificate{
-    flex-direction: column !important;
-
-  }
-
+ 
   .certificatesImagePart .certificateP {
     font-size: 21px;
     width: 100% !important;
     text-align: center;
   }
 
-  .certificatesImagePart .img-part{
+  .certificatesImagePart .img-part {
     width: 100%;
   }
-  .certificatesImagePart .img-part img{
+
+  .certificatesImagePart .img-part img {
     width: 60%;
+  }
+
+  section#main {
+    margin: 0;
+    padding: 0;
   }
 }
 
-@media(max-width : 480px){
-   .certificatesImagePart .img-part{
+@media(max-width : 480px) {
+  .certificatesImagePart .img-part {
     width: 100%;
   }
-  .certificatesImagePart .img-part img{
+
+  .certificatesImagePart .img-part img {
     width: 100%;
   }
 }

@@ -58,7 +58,7 @@ function figuringResponsive() {
     const responsiveViewContent = document.createElement("div");
     responsiveViewContent.className = "responsiveViewContent";
     if (currentPage === "production.html" || currentPage === "aboutus.html") {
-  contentHTML = `
+      contentHTML = `
     <div class="responsiveBox">
       <div class="upperBox">
         <div class="circle-line">
@@ -66,7 +66,7 @@ function figuringResponsive() {
           <div class="circle"></div>
           <div class="line"></div>
         </div>
-        <h2 class="product-title">${firstP ? firstP.innerText : ""}</h2>
+        <h3 class="product-title">${firstP ? firstP.innerText : ""}</h3>
         <div class="circle-line">
           <div class="line"></div>
           <div class="circle"></div>
@@ -79,9 +79,9 @@ function figuringResponsive() {
       </div>
     </div>
   `;
-} 
-else if (currentPage === "careers.html") {
-  contentHTML = `
+    }
+    else if (currentPage === "careers.html") {
+      contentHTML = `
     <div class="responsiveBox">
       <div class="upperBox">
         <div class="circle-line">
@@ -89,12 +89,12 @@ else if (currentPage === "careers.html") {
           <div class="circle"></div>
           <div class="line"></div>
         </div>
+        <h3 class="product-title">${firstP ? firstP.innerText : ""}</h3>
         <div class="circle-line">
           <div class="line"></div>
           <div class="circle"></div>
           <div class="line"></div>
         </div>
-        <h2 class="product-title">${firstP ? firstP.innerText : ""}</h2>
         <div class="responsiveInput">
           <input type="text" placeholder="Find a job">
           <span>
@@ -104,9 +104,31 @@ else if (currentPage === "careers.html") {
       </div>
     </div>
   `;
-} 
-else {
-  contentHTML = `
+    }
+     else if (currentPage === "certificates.html") {
+      contentHTML = `
+    <div class="responsiveBox">
+      <div class="upperBox">
+        <div class="circle-line">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <h3 class="product-title">${firstP ? firstP.innerText : ""}</h3>
+        <div class="circle-line">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <div class="imgContent">
+        <img src="logoImages/certificatesbg.webp">
+      </div>
+      </div>
+    </div>
+  `;
+    }
+    else {
+      contentHTML = `
     <div class="responsiveBox">
       <div class="upperBox">
         <h3 class="product-title">${firstP ? firstP.innerText : ""}</h3>
@@ -127,7 +149,7 @@ else {
       </div>
     </div>
   `;
-}
+    }
 
     responsiveViewContent.innerHTML = contentHTML;
     if (window.innerWidth < 768) {
