@@ -67,8 +67,6 @@
   justify-content: center;
 }
 
-
-
 .bannerWord {
   display: flex;
   align-items: center;
@@ -85,17 +83,17 @@
 
 .aboutUsInfoStatistics {
   display: flex;
-  gap: 1.3rem;
+  gap: 2rem;
   width: 80%;
   align-items: center;
-  height: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .aboutUsInfoStatistics .statisticAzza p:first-child {
   font-size: 60px;
   font-weight: 700;
-  color: var(--brown-color);
+  color: #6F3D23;
   text-align: center;
   line-height: 1;
 }
@@ -103,7 +101,7 @@
 .aboutUsInfoStatistics .statisticAzza p:nth-child(2) {
   font-size: 25px;
   font-weight: 600;
-  color: var(--brown-color);
+  color: #6F3D23;
   text-align: center;
 }
 
@@ -185,11 +183,46 @@
 }
 
 @media(max-width :768px) {
-  .responsiveBox .upperBox .azzaProductType{
+  .responsiveBox .upperBox .azzaProductType {
     font-size: 21px !important;
     font-weight: 400 !important;
   }
-  .responsiveBox .upperBox{
+
+  .responsiveBox .upperBox {
     width: 70%;
   }
+
+  .aboutUsInfoStatistics .statisticAzza p:nth-child(2) {
+    font-size: 16px;
+    width: 70%;
+  }
+
+  .imageBoxesPart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2rem !important;
+  }
+
+  .imageBoxesPart .imageBox {
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imageBox .left-part,
+  .imageBox .right-part {
+    width: 100%;
+  }
+  .imageBox .right-part p{
+    width: 100%;
+  }
+   .imageBox .right-part .aboutUsLink{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
 }

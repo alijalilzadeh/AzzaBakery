@@ -185,13 +185,21 @@
 }
 
 .responsiveBox .upperBox .product-title {
-  font-size: 21px;
+  font-size: 23px;
   color: var(--brown-color);
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .responsiveBox .upperBox .azzaProductType {
-  font-size: 26px;
+  font-size: 21px;
+  color: var(--brown-color);
+  padding: 0 2rem;
+}
+
+.responsiveBox .descriptionP{
+  width: 90%;
+  margin-top: 30px;
+  font-size: 21px;
   color: var(--brown-color);
 }
 
@@ -215,6 +223,9 @@
 }
 
 @media (max-width: 768px) {
+  section#main{
+    gap: 0 !important;
+  }
   .responsiveBox .upperBox{
     padding: 2rem 0;
   }
@@ -265,6 +276,10 @@
   .hamburgerBox .upper-part {
     display: flex !important;
   }
+  .responsiveBox .descriptionP{
+    width: 100% !important;
+  }
+ 
 }
 
 @media (max-width: 480px) {
@@ -279,6 +294,9 @@
   }
   .navbar-part .navbar-right .phone-number span{
     display: none;
+  }
+  .responsiveBox .descriptionP{
+    width: 100% !important;
   }
 }
 

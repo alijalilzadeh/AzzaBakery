@@ -1,4 +1,4 @@
-const locationIcon = document.querySelector(".locationSelect .fa-location-crosshairs");
+const locationIcon = document.querySelector(".fa-location-crosshairs");
 const mapFrame = document.querySelector(".map-wrapper iframe")
 locationIcon.addEventListener("click",()=>{
   if(navigator.geolocation){

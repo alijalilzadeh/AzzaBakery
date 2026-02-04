@@ -101,7 +101,7 @@
   line-height: 1;
 }
 
-.productionSectionDescription span {
+.productionSectionDescription p {
   text-align: center;
   line-height: 1.5;
   color: var(--brown-color);

@@ -156,6 +156,22 @@ section#main{
   }
 }
 
+@media(max-width:480px){
+   .azzaFormPart{
+    width: 100% !important;
+  }
+  .formcontent{
+    width: 100%;    
+  }
+  .formcontent .left-content,.formcontent .right-content {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+}
+
 /* <div class="azzaFormPart">
         <div class="azzaFormBox">
           <h3>Corporate Sales – Azza Gastronom</h3>

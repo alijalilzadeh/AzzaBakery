@@ -184,3 +184,54 @@ html {
   width: 100%;
   height: 100%;
 }
+
+.responsiveBox .upperBox {
+  width: 100% !important;
+}
+
+@media(max-width:768px) {
+  .vacantionPart {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #fff;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .vacationBox {
+    padding: 0;
+    gap: 1.5rem;
+    padding-bottom:1.5rem;
+  }
+  .vacationBox .img-part{
+    width: 100%;
+    height:220px ;
+  }
+  .vacationBox .img-part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media(max-width:480px) {
+  .vacantionPart {
+    display: grid;
+    grid-template-columns:1fr;
+    background-color: #fff;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .vacationBox {
+    padding: 0;
+    gap: 1.5rem;
+    padding-bottom:1.5rem;
+  }
+  .vacationBox .img-part{
+    width: 100%;
+    height:450px ;
+  }
+  .vacationBox .img-part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -42,43 +42,94 @@ cakeLinks.forEach(cakeLink => {
 
 })
 function figuringResponsive() {
-  // Banner word
   const existingContent = document.querySelector(".bannerPart");
   const existingContentImg = document.querySelector(".bannerPart .img-part img")
   const mainSection = document.getElementById("main");
   const bakeryType = document.querySelectorAll(".bannerPart p");
-  let bakeType = "";
-  bakeryType.forEach((type,index) => {
-    if (type !== "PRODUCTS") {
-      bakeType = type;
-    }
-  })
+
+  const firstP = bakeryType[0] || null;
+  const secondP = bakeryType[1] || null;
+
+  let contentHTML = "";
+  const currentPage = window.location.pathname.split("/").pop().toLowerCase();
+  console.log(currentPage)
 
   if (!document.querySelector(".responsiveViewContent")) {
     const responsiveViewContent = document.createElement("div");
     responsiveViewContent.className = "responsiveViewContent";
-    responsiveViewContent.innerHTML = `
-      <div class="responsiveBox">
-        <div class="upperBox">
-          <h3 class="product-title">PRODUCTS</h3>
-          <div class="circle-line">
-            <div class="line"></div>
-            <div class="circle"></div>
-            <div class="line"></div>
-          </div>
-          <h2 class="azzaProductType">${bakeType.innerText}</h2>
-          <div class="circle-line">
-            <div class="line"></div>
-            <div class="circle"></div>
-            <div class="line"></div>
-          </div>
+    if (currentPage === "production.html" || currentPage === "aboutus.html") {
+  contentHTML = `
+    <div class="responsiveBox">
+      <div class="upperBox">
+        <div class="circle-line">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
         </div>
-        <div class="imgContent">
-          <img src="${existingContentImg.src}">
+        <h2 class="product-title">${firstP ? firstP.innerText : ""}</h2>
+        <div class="circle-line">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <p class="descriptionP">${secondP ? secondP.innerText : ""}</p>
+      </div>
+      <div class="imgContent">
+        <img src="${existingContentImg ? existingContentImg.src : ""}">
+      </div>
+    </div>
+  `;
+} 
+else if (currentPage === "careers.html") {
+  contentHTML = `
+    <div class="responsiveBox">
+      <div class="upperBox">
+        <div class="circle-line">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <div class="circle-line">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <h2 class="product-title">${firstP ? firstP.innerText : ""}</h2>
+        <div class="responsiveInput">
+          <input type="text" placeholder="Find a job">
+          <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
         </div>
       </div>
-    `;
+    </div>
+  `;
+} 
+else {
+  contentHTML = `
+    <div class="responsiveBox">
+      <div class="upperBox">
+        <h3 class="product-title">${firstP ? firstP.innerText : ""}</h3>
+        <div class="circle-line">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <p class="azzaProductType">${secondP ? secondP.innerText : ""}</p>
+        <div class="circle-line">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="imgContent">
+        <img src="${existingContentImg ? existingContentImg.src : ""}">
+      </div>
+    </div>
+  `;
+}
 
+    responsiveViewContent.innerHTML = contentHTML;
     if (window.innerWidth < 768) {
       existingContent.style.display = "none";
       mainSection.prepend(responsiveViewContent);
