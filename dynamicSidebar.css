@@ -7,6 +7,14 @@
   --link-icons: #302215;
 }
 
+a.phone-number{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hamburgerSidebar {
   transform: translateX(-320px);
   position: fixed;
