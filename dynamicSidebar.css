@@ -7,13 +7,7 @@
   --link-icons: #302215;
 }
 
-a.phone-number{
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .hamburgerSidebar {
   transform: translateX(-320px);
@@ -296,6 +290,13 @@ a.phone-number{
 }
 
 @media (max-width: 480px) {
+  a.phone-number{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   .mainContentPart {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 1rem;
@@ -313,3 +314,82 @@ a.phone-number{
   }
 }
 
+@media (max-width: 400px) {
+
+  .mainContentPart {
+    grid-template-columns: 1fr; 
+    padding: 0 0.5rem !important;
+    gap: 1rem !important;
+  }
+
+  .mainContentPart .productBox .img-part {
+    height: 300px !important; 
+  }
+  .mainContentPart .productBox .img-part img{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .cakeLinks {
+    flex-direction: column !important;
+    gap: 0.2rem !important;
+  }
+
+  .responsiveBox {
+    width: 100% !important;
+    box-sizing: border-box; 
+  }
+
+  .responsiveBox .upperBox {
+    width: 100% !important;
+    gap: 1rem !important;
+    padding: 1rem 0 !important;
+  }
+  .responsiveBox .upperBox .product-title{
+    font-size: 21px;
+    font-weight: 600 !important;
+  }
+  .responsiveBox .upperBox .azzaProductType{
+    font-weight: 700;
+  }
+
+  .responsiveBox .descriptionP {
+    width: 100% !important;
+    font-size: 18px !important; 
+    text-align: center;
+  }
+
+  .responsiveBox .responsiveInput {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+
+  .responsiveBox .responsiveInput input {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+  }
+
+  .responsiveBox .responsiveInput span {
+    align-self: center !important;
+  }
+
+  .bannerText {
+    width: 90% !important;
+  }
+
+  .navbar-part .navbar-right .phone-number span {
+    display: none !important;
+  }
+
+  .hamburgerSidebar, 
+  .hamburgerBox {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  .responsiveBox .imgContent img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
