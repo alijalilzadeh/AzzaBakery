@@ -131,6 +131,11 @@ function figuringResponsive() {
       contentHTML = `
     <div class="responsiveBox">
       <div class="upperBox">
+        <div class="circle-line">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
         <h3 class="product-title">${firstP ? firstP.innerText : ""}</h3>
         <div class="circle-line">
           <div class="line"></div>
@@ -138,11 +143,6 @@ function figuringResponsive() {
           <div class="line"></div>
         </div>
         <p class="azzaProductType">${secondP ? secondP.innerText : ""}</p>
-        <div class="circle-line">
-          <div class="line"></div>
-          <div class="circle"></div>
-          <div class="line"></div>
-        </div>
       </div>
       <div class="imgContent">
         <img src="${existingContentImg ? existingContentImg.src : ""}">

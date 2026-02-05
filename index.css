@@ -777,6 +777,7 @@ section#newsFromAzza {
   color: var(--brown-color);
 }
 
+
 @media (max-width: 800px) {
   .center-part {
     background: rgba(75, 38, 19, 0.01);
@@ -855,6 +856,9 @@ section#newsFromAzza {
   .newsProductBox {
     height: 100%;
   }
+   .newsProductBox .commonNameDetails {
+    text-align: center;
+  }
 }
 
 /* <div class="center-part">
@@ -885,5 +889,9 @@ section#newsFromAzza {
   }
   .brownLinks{
     font-size: 11px !important;
+  }
+  .center-part{
+    width: 75% !important;
+    padding: 20px 40px;
   }
 }

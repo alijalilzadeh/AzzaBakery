@@ -53,3 +53,73 @@ languageSelectionSpanLang1.addEventListener("click", () => {
     });
   }
 });
+
+
+function figuringResponsive() {
+  const existingGallery = document.querySelector("#galleryAzza");
+  const mainSection = document.getElementById("main");
+  
+  let contentHTML = "";
+  console.log(currentPage)
+
+  if (!document.querySelector(".gallery-slider")) {
+    const gallerySlider = document.createElement("div");
+    gallerySlider.className = "gallery-slider";
+      contentHTML = `
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="galleryImages/1stgallery.jpg">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="galleryImages/2ndgallery.jpg">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="galleryImages/3rdgallery.jpg">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="galleryImages/4thgallery.jpg">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="galleryImages/5thgallery.jpg">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="galleryImages/6thgallery.jpg">
+          </div>
+
+        </div>
+        <div class="swiper-button-prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+
+        <div class="swiper-button-next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+  `;
+    }
+    gallerySlider.innerHTML = contentHTML;
+    if (window.innerWidth < 768) {
+      existingGallery.style.display = "none";
+      mainSection.prepend(responsiveViewContent);
+    }
+  }
+figuringResponsive();
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 768) {
+    figuringResponsive();
+  } else {
+    const galerySliderEl = document.querySelector(".gallery-slider");
+    if (galerySliderEl) galerySliderEl.remove();
+    document.querySelector(".existingGallery").style.display = "flex";
+  }
+});

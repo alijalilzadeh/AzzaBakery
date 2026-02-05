@@ -87,7 +87,7 @@
   width: 80%;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  margin: 100px 0 !important;
 }
 
 .aboutUsInfoStatistics .statisticAzza p:first-child {

@@ -199,6 +199,22 @@
     const main = document.querySelector("section#main");
 
     main.style.paddingTop = navbar.offsetHeight + "px";
+
+    function layoutAdjust(){
+      if(window.innerWidth < 768){
+        const certificatesBoxes = document.querySelectorAll(".certificateBox");
+        certificatesBoxes.forEach((box,index) =>{
+          if(index%2 === 0){
+            box.style.flexDirection = "column-reverse";
+          }
+          else{
+            box.style.flexDirection = "column";
+          }
+        })
+      }
+    }
+    layoutAdjust();
+    window.addEventListener("resize",layoutAdjust)
   </script>
 </body>
 

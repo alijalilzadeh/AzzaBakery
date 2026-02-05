@@ -278,6 +278,9 @@ html {
     height: 100%;
     object-fit: cover;
   }
+  .responsiveBox{
+    padding: 0 2rem !important;
+  }
   .responsiveBox .responsiveInput{
     width: 80%;
     display: flex;
