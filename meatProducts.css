@@ -203,7 +203,6 @@
 
   .meatProductsImageBoxes .meatProductsImageBox {
     display: flex;
-    flex-direction: column !important;
     height: auto;
     gap: 2rem;
     padding: 2rem 1rem;

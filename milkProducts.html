@@ -329,19 +329,11 @@
   <script src="dynamicSidebar.js"></script>
   <script src="languageSelection.js"></script>
   <script src="productsUnderElements.js"></script>
+  <script src="product-layout.js"></script>
   <script>
     const navbar = document.querySelector(".navbar-part");
     const main = document.querySelector("section#main");
     main.style.paddingTop = navbar.offsetHeight + "px";
-
-    productBoxes.forEach((productBox, index) => {
-      if (index % 2 === 0) {
-        productBox.style.flexDirection = "row";
-      }
-      else {
-        productBox.style.flexDirection = "row-reverse";
-      }
-    });
 
   </script>
 </body>

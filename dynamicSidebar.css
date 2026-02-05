@@ -197,13 +197,14 @@
   font-weight: 700 !important;
 }
 
-.responsiveBox .upperBox .azzaProductType,.responsiveBox .upperBox .azzaProductType {
+.responsiveBox .upperBox .azzaProductType,
+.responsiveBox .upperBox .azzaProductType {
   font-size: 21px;
   color: var(--brown-color);
   padding: 0 2rem;
 }
 
-.responsiveBox .descriptionP{
+.responsiveBox .descriptionP {
   width: 100% !important;
   margin-top: 30px;
   font-size: 21px;
@@ -231,12 +232,14 @@
 }
 
 @media (max-width: 768px) {
-  section#main{
+  section#main {
     gap: 0 !important;
   }
-  .responsiveBox .upperBox{
+
+  .responsiveBox .upperBox {
     padding: 2rem 0;
   }
+
   .hamburgerSidebar {
     width: 100% !important;
     max-width: 100vw;
@@ -284,19 +287,27 @@
   .hamburgerBox .upper-part {
     display: flex !important;
   }
-  .responsiveBox .descriptionP{
+
+  .responsiveBox .descriptionP {
     width: 100% !important;
+  }
+
+  .importedGroceryBox {
+    text-align: center;
+    padding: 2rem 1rem;
+    flex-direction: column-reverse !important;
   }
 }
 
 @media (max-width: 480px) {
-  a.phone-number{
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  a.phone-number {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .mainContentPart {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 1rem;
@@ -306,10 +317,12 @@
   .mainContentPart .productBox .img-part {
     height: 220px;
   }
-  .navbar-part .navbar-right .phone-number span{
+
+  .navbar-part .navbar-right .phone-number span {
     display: none;
   }
-  .responsiveBox .descriptionP{
+
+  .responsiveBox .descriptionP {
     width: 100% !important;
   }
 }
@@ -317,18 +330,20 @@
 @media (max-width: 400px) {
 
   .mainContentPart {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     padding: 0 0.5rem !important;
     gap: 1rem !important;
   }
 
   .mainContentPart .productBox .img-part {
-    height: 300px !important; 
+    height: 300px !important;
   }
-  .mainContentPart .productBox .img-part img{
+
+  .mainContentPart .productBox .img-part img {
     width: 100% !important;
     height: 100% !important;
   }
+
   .cakeLinks {
     flex-direction: column !important;
     gap: 0.2rem !important;
@@ -336,7 +351,7 @@
 
   .responsiveBox {
     width: 100% !important;
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
 
   .responsiveBox .upperBox {
@@ -344,17 +359,19 @@
     gap: 1rem !important;
     padding: 1rem 0 !important;
   }
-  .responsiveBox .upperBox .product-title{
+
+  .responsiveBox .upperBox .product-title {
     font-size: 21px;
     font-weight: 600 !important;
   }
-  .responsiveBox .upperBox .azzaProductType{
+
+  .responsiveBox .upperBox .azzaProductType {
     font-weight: 700;
   }
 
   .responsiveBox .descriptionP {
     width: 100% !important;
-    font-size: 18px !important; 
+    font-size: 18px !important;
     text-align: center;
   }
 
@@ -382,7 +399,7 @@
     display: none !important;
   }
 
-  .hamburgerSidebar, 
+  .hamburgerSidebar,
   .hamburgerBox {
     width: 100% !important;
     max-width: 100vw !important;
