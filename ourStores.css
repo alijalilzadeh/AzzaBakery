@@ -143,16 +143,15 @@ section#main {
   position: absolute;
   right: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: .8rem;
 }
 
-.searchAzzaStoresBox .inputPart .locationSelect i {
-  font-size: 20px;
-  color: var(--brown-color);
+.searchAzzaStoresBox .inputPart img {
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 30px;
+  height: 30px;
 }
 
 .searchAzzaStoresBox .inputPart .locationSelect button {
@@ -413,12 +412,30 @@ section#main {
   .map-wrapper .locationSections .locationLinks::-webkit-scrollbar-track {
     display: none;
   }
-
-
 }
 
 @media(max-width:480px){
   .searchAzzaStoresBox h3{
     text-align: center;
   }
+
+  .searchAzzaStoresBox .inputPart input::placeholder {
+    font-size: 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width:420px) {
+  .searchAzzaStoresBox .inputPart .locationSelect {
+    gap:0rem !important;
+  }
+  .searchAzzaStoresBox .inputPart input::placeholder {
+    font-size: 14px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 }

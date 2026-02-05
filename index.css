@@ -399,7 +399,15 @@ section#map {
   position: absolute;
   right: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: .8rem;
+}
+
+.searchAzzaStoresBox .inputPart img {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 
 .searchAzzaStoresBox .inputPart .locationSelect i {
@@ -848,15 +856,20 @@ section#newsFromAzza {
   .searchAzzaStoresBox .districtsOfBaku a {
     font-size: 12px;
   }
+  .newsProductBox .img-part{
+    height: 250px !important;
+  }
 
   .newsProductBox .img-part img {
-    height: 95%;
+    height: 100%;
+    object-fit: cover !important;
   }
 
   .newsProductBox {
     height: 100%;
   }
-   .newsProductBox .commonNameDetails {
+
+  .newsProductBox .commonNameDetails {
     text-align: center;
   }
 }
@@ -873,25 +886,44 @@ section#newsFromAzza {
       </div> */
 
 @media(max-width:480px) {
-  .three-items-boxs{
+  .three-items-boxs {
     display: flex;
     flex-direction: column !important;
   }
-  section#products-box{
+
+  section#products-box {
     padding: 0;
   }
- 
-  section#galleryAzza p{
+
+  section#galleryAzza p {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .brownLinks{
+
+  .brownLinks {
     font-size: 11px !important;
   }
-  .center-part{
+
+  .center-part {
     width: 75% !important;
     padding: 20px 40px;
+  }
+
+  .searchAzzaStoresBox .inputPart input::placeholder {
+    font-size: 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width:420px) {
+  .searchAzzaStoresBox .inputPart input::placeholder {
+    font-size: 14px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
