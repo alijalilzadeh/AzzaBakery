@@ -219,7 +219,7 @@
 }
 
 .alchoholLinks a:hover {
-  color:#595959;
+  color: #595959;
 }
 
 .cakeLinks {
@@ -240,4 +240,136 @@
 
 .cakeLinks a:hover {
   color: var(--light-yellow);
+}
+
+@media (max-width: 1024px) {
+  .alchoholProductsImageBoxes .alchoholProductsImageBox {
+    gap: 2rem;
+    height: auto;
+    /* 600px ləğv olundu */
+    padding: 3rem 2rem;
+  }
+
+  .alchoholProductsImageBoxes .alchoholProductsImageBox .img-box {
+    width: 55%;
+    height: 420px;
+  }
+
+  .alchoholProductsImageBoxes .alchoholProductsImageBox .descriptionPart {
+    width: 40%;
+  }
+
+  .alchoholProductsImageBox .img-box img:nth-child(2) {
+    width: 260px;
+    height: 260px;
+  }
+
+  .whiteBg {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .alchoholProductsImageBoxes{
+    padding: 0 !important;
+  }
+  .alchoholProductsImageBoxes .alchoholProductsImageBox {
+    display: flex;
+    flex-direction: column !important;
+    height: auto;
+    padding: 2.5rem 1.5rem;
+    gap: 2.5rem;
+  }
+
+  .descriptionPart .alchoholType {
+    display: none;
+  }
+
+  .alchoholProductsImageBoxes .alchoholProductsImageBox .img-box {
+    width: 100%;
+    height: 590px;
+  }
+
+  .alchoholProductsImageBox .img-box img:first-child {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .alchoholProductsImageBox .img-box img:nth-child(2) {
+    display: none;
+  }
+
+  .alchoholProductsImageBoxes .alchoholProductsImageBox .descriptionPart {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .alchoholCountriesLinks {
+    justify-content: center;
+  }
+
+  .whiteBg {
+    width: 170px;
+    height: 170px;
+  }
+
+  .descriptionPart .alchoholDescription {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .alchoholProductsImageBoxes .alchoholProductsImageBox {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .alchoholProductsImageBoxes .alchoholProductsImageBox .img-box {
+    height: 260px;
+  }
+
+  .alchoholProductsImageBox .img-box img:nth-child(2) {
+    width: 160px;
+    height: 160px;
+  }
+
+  .whiteBg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .whiteBg span {
+    font-size: 14px;
+  }
+
+  .alchoholCountriesLinks span {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .alchoholProductsImageBoxes .alchoholProductsImageBox {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .alchoholProductsImageBoxes .alchoholProductsImageBox .img-box {
+    height: 220px;
+  }
+
+  .alchoholProductsImageBox .img-box img:nth-child(2) {
+    width: 130px;
+    height: 130px;
+  }
+
+  .whiteBg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .descriptionPart .alchoholDescription {
+    font-size: 14px;
+  }
 }
