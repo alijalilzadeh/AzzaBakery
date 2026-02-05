@@ -117,6 +117,10 @@ a.phone-number {
           <img src="${existingContentImg.src}">
         </div>
       </div> */
+.bannerPart{
+  width: 100% !important;
+}
+
 
 /* JavaScript responsive Css codes  */
 
@@ -219,6 +223,16 @@ a.phone-number {
   background-color: #F6D119;
 }
 
+ .mainContentPart .productBox .img-part {
+    height: 310px !important;
+  }
+
+  .mainContentPart .productBox .img-part img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
 /* Responsive codes */
 @media (max-width: 1024px) {
   .mainContentPart {
@@ -274,11 +288,18 @@ a.phone-number {
 
   .mainContentPart {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 2rem;
+    padding: 0 .6rem;
+    gap: .7rem !important;
   }
 
   .mainContentPart .productBox .img-part {
-    height: 240px;
+    height: 260px;
+  }
+
+  .mainContentPart .productBox .img-part img{
+    width: 100% !important;
+    height: 100% !important ;
+    object-fit: cover !important;
   }
 
   .cakeLinks {
@@ -328,12 +349,12 @@ a.phone-number {
 
   .mainContentPart {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 1rem;
-    gap: 1.2rem;
+    padding: 0 .9rem;
+    gap: .7rem;
   }
 
   .mainContentPart .productBox .img-part {
-    height: 220px;
+    height: 250px !important;
   }
 
   .navbar-part .navbar-right .phone-number span {
@@ -346,25 +367,29 @@ a.phone-number {
 }
 
 @media (max-width: 400px) {
-   .navbar-part{
-    gap: 1rem !important;
-   }
-   .navbar-part .navbar-left{
-    gap: 1rem;
-   }
-  .mainContentPart {
-    grid-template-columns: 1fr;
-    padding: 0 0.5rem !important;
+  .navbar-part {
     gap: 1rem !important;
   }
 
+  .navbar-part .navbar-left {
+    gap: 1rem;
+  }
+
+  .mainContentPart {
+    width: 100% !important;
+    grid-template-columns: 1fr;
+    padding: 0 1rem !important;
+    gap: 0.5rem !important;
+  }
+
   .mainContentPart .productBox .img-part {
-    height: 300px !important;
+    height: 240px !important;
   }
 
   .mainContentPart .productBox .img-part img {
     width: 100% !important;
     height: 100% !important;
+    object-fit: cover !important;
   }
 
   .cakeLinks {
