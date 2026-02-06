@@ -13,7 +13,7 @@ const moreDetailData = [
       },
       {
         "id": 2,
-        "name": "Raspberry yogurt",
+        "name": "Rasberry Yogurt",
         "price": 19.90,
         "ingredients": "White biscuit crumbs, fine flour, powdered sugar, baking powder, vanilla powder, eggs, emulsifier, drinking water, milk, plant-based cream, gelatin, yogurt, frozen raspberries, cornstarch, butter, powdered sugar",
         "size": ["10 (person) - 19.90 AZN"],
