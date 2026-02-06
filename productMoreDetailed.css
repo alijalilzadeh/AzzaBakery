@@ -342,3 +342,180 @@
   background: #F6D119;
   border-radius: 50%;
 }
+@media (max-width: 1024px) {
+
+  .detaiContent .detailBox {
+    padding: 30px 2rem;
+    gap: 2rem;
+  }
+
+  .detaiContent .detailBox .paginationContent,
+  .detaiContent .detailBox .productDetailInfo {
+    width: 50%;
+  }
+
+  .detailBox .productDetailInfo div .product-name {
+    font-size: 34px;
+  }
+
+  .detailBox .productDetailInfo div .product-price span:nth-child(2) {
+    font-size: 22px;
+  }
+
+  .swiper-slide img {
+    height: 480px;
+  }
+
+  .cakesImgBoxes {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 2rem;
+    gap: 1.5rem;
+  }
+
+  .cakesImgBoxes .cakeImgBox .img-part {
+    width: 100%;
+    height: 260px;
+  }
+}
+@media (max-width: 768px) {
+  .product-price .price-value{
+    font-size: 26px !important;
+  }
+  .topTitle h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .productType .reverseIcon {
+    padding-left: 15px;
+  }
+
+  .detaiContent .detailBox {
+    flex-direction: column-reverse;
+    padding: 30px 0;
+    gap: 3rem;
+  }
+
+  .detaiContent .detailBox .paginationContent,
+  .detaiContent .detailBox .productDetailInfo {
+    width: 100%;
+  }
+
+  .detailBox .productDetailInfo div {
+    width: 100%;
+   
+  }
+
+  .detailBox .productDetailInfo div .product-name {
+    font-size: 28px;
+  }
+
+  .detailBox .productDetailInfo div .product-price span:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .productDetailInfo button {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .swiper-slide img {
+    height: 360px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .cakesImgBoxes {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1.5rem;
+  }
+
+  .cakesImgBoxes .cakeImgBox .img-part {
+    height:280px;
+  }
+
+  .cakeLinks {
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .topTitle {
+    padding: 20px 1rem;
+  }
+
+  .topTitle h2 {
+    font-size: 16px;
+  }
+
+  .detailBox .productDetailInfo div .product-name {
+    font-size: 22px;
+  }
+
+  .detailBox .productDetailInfo div .product-price span:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .product-ingredients p,
+  .product-size span:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .swiper-slide img {
+    height: 260px;
+    border-radius: 4px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 3px;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 30px;
+  }
+
+  .cakesImgBoxes {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .cakesImgBoxes .cakeImgBox .img-part {
+    height: 300px;
+  }
+
+  .cakeImgBox a {
+    width: 90px;
+    height: 80px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .detaiContent .detailBox {
+    padding: 25px 1rem;
+  }
+
+  .detailBox .productDetailInfo div {
+    gap: 1.2rem;
+  }
+
+  .detailBox .productDetailInfo div .product-name {
+    font-size: 20px;
+  }
+
+  .swiper-slide img {
+    height: 220px;
+  }
+
+  .cakesImgBoxes .cakeImgBox span .cakename {
+    font-size: 14px;
+  }
+}
