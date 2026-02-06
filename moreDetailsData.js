@@ -1,6 +1,6 @@
 const moreDetailData = [
   {
-    "product": "cake",
+    "product": "CAKES",
     "ProductInfo": [
       {
         "id": 1,
@@ -149,10 +149,76 @@ const moreDetailData = [
       },
     ]
 
+  },
+  {
+    "product": "PIES",
+    "ProductInfo": [
+      {
+        "id": 19,
+        "name": "Pie with apricots",
+        "price": 8.90,
+        "ingredients": "Butter, powdered sugar, eggs, cornstarch, all-purpose flour, vanilla powder, yogurt, baking powder, apricot jam, almond flakes",
+        "size": ["5 person"],
+        "images": ["pieapricot1.png"]
+      },
+      {
+        "id": 20,
+        "name": "Apple pie with cottage cheese",
+        "price": 8.90,
+        "ingredients": "flour, butter, eggs , sugar, raspberry jam, apple jam, cottage cheese, soured milk, baking powder, vegetable cream, vanilla , vinegar, starch.",
+        "size": ["5 person"],
+        "images": ["applepiecottagecheese1.jpg", "applepiecottagecheese2.jpg"]
+      },
+      {
+        "id": 21,
+        "name": "Pineapple Pie",
+        "price": 8.90,
+        "ingredients": "flour, butter, eggs, soured milk, sugar powder, pineapple, baking powder, sugar powder, corn starch, vinegar, vanilla powder, water.",
+        "size": ["5 person"],
+        "images": ["pineapplepie1.jpg", "pineapplepie2.jpg"]
+      },
+      {
+        "id": 22,
+        "name": "Pie with pear",
+        "price": 8.90,
+        "ingredients": "orange flavoring, vanilla powder, drinking water, yogurt, simple jelly, cornstarch, butter, whole wheat flour, powdered sugar, cinnamon, powdered sugar, baking powder, vinegar, natural pears, eggs, almonds",
+        "size": ["5 person"],
+        "images": ["piewithpear1.jpg", "piewithpear2.jpg"]
+      },
+      {
+        "id": 23,
+        "name": "Apple Crumble",
+        "price": 8.90,
+        "ingredients": "flour, butter, eggs, granulated sugar, soured milk, apple jam, sultana, almonds, starch, baking powder, vanilla, water, vinegar, cinnamon, salt.",
+        "size": ["5 person"],
+        "images": ["applecrumble1.jpg", "applecrumble2.jpg"]
+      },
+    ]
+  },
+  {
+    "product": "ROLLS",
+    "ProductInfo": [
+      {
+        "id": 24,
+        "name": "Roll cake blueberry",
+        "price": 7.90,
+        "ingredients": "Premium flour, almond kernels, vanilla powder, baking powder, eggs, powdered sugar, emulsifier, drinking water, blueberry jam, milk, corn starch, vegetable cream, gelatin, peanut kernels, cocoa",
+        "size": ["5 person"],
+        "images": ["rollcakeblueberry.png"]
+      },
+      {
+        "id": 25,
+        "name": "Roll with cherry",
+        "price": 7.90,
+        "ingredients": "vanilla, canned cherry, water, cherry jelly, cocoa, starch, butter, milk, flour, powdered sugar, baking powder, vegetable cream, cherry juice, salt, coconut shavings, eggs.",
+        "size": ["5 person"],
+        "images": ["rollwithcherry1.jpg","rollwithcherry2.jpg"]
+      }
+    ]
+
   }
 ]
 
-console.log(moreDetailData[0].ProductInfo)
 
 const moreDetailBoxes = document.querySelectorAll(".productBox a");
 const existingContent = document.querySelector(".mainContentPart");
@@ -163,11 +229,16 @@ moreDetailBoxes.forEach(link => {
 
     const productBox = link.closest(".productBox");
     const productName = productBox.querySelector(".cakename").innerText;
-    const productType = productBox.querySelector(".cakeType")
+    const productType = productBox.querySelector(".cakeType").innerText;
 
     bannerText.style.display = "none";
+    const categoryData = moreDetailData.find(category => category.product === productType);
 
-    const productData = moreDetailData[0]["ProductInfo"].find(cake => cake.name === productName);
+    const productData = categoryData["ProductInfo"].find(
+      item => item.name.toLowerCase() === productName.toLowerCase()
+    );
+
+
     if (!productData) return;
     if (existingContent) existingContent.remove();
 
@@ -191,7 +262,7 @@ moreDetailBoxes.forEach(link => {
             ${productData.images.map(img =>
           `
                 <div class="swiper-slide">
-                  <img src="MoreDetailedProducts/paginationCake/${img}" alt="${img} Cake">
+                  <img src="MoreDetailedProducts/pagination${productType}/${img}" alt="${productName} ">
                 </div>
               `
         ).join('')}
@@ -213,7 +284,7 @@ moreDetailBoxes.forEach(link => {
             <h2 class="product-name">${productName}</h2>
             <p class="product-price">
               <span>PRICE</span>
-              <span class="price-value">${productData.price}0 AZN</span>
+              <span class="price-value">${productData.price.toFixed(2)} AZN</span>
             </p>
             <div class="product-ingredients">
               <h3>INGREDIENTS</h3>
