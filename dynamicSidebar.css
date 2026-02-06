@@ -117,7 +117,7 @@ a.phone-number {
           <img src="${existingContentImg.src}">
         </div>
       </div> */
-.bannerPart{
+.bannerPart {
   width: 100% !important;
 }
 
@@ -223,15 +223,15 @@ a.phone-number {
   background-color: #F6D119;
 }
 
- .mainContentPart .productBox .img-part {
-    height: 310px !important;
-  }
+.mainContentPart .productBox .img-part {
+  height: 310px !important;
+}
 
-  .mainContentPart .productBox .img-part img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
+.mainContentPart .productBox .img-part img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
 
 /* Responsive codes */
 @media (max-width: 1024px) {
@@ -296,9 +296,9 @@ a.phone-number {
     height: 260px;
   }
 
-  .mainContentPart .productBox .img-part img{
+  .mainContentPart .productBox .img-part img {
     width: 100% !important;
-    height: 100% !important ;
+    height: 100% !important;
     object-fit: cover !important;
   }
 
@@ -313,6 +313,17 @@ a.phone-number {
 
   .responsiveBox .descriptionP {
     width: 100% !important;
+    font-weight: 400 !important;
+  }
+
+  .responsiveBox .upperBox .product-title {
+    font-size: 21px;
+    font-weight: 700 !important;
+  }
+
+  .responsiveBox .upperBox .azzaProductType {
+    font-weight: 700 !important;
+    font-size: 26px;
   }
 
   .importedGroceryBox {
@@ -408,10 +419,7 @@ a.phone-number {
     padding: 1rem 0 !important;
   }
 
-  .responsiveBox .upperBox .product-title {
-    font-size: 21px;
-    font-weight: 600 !important;
-  }
+
 
   .responsiveBox .descriptionP {
     width: 100% !important;

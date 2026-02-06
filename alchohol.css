@@ -327,7 +327,11 @@
   }
 
   .alchoholProductsImageBoxes .alchoholProductsImageBox .img-box {
-    height: 260px;
+    height: 330px;
+  }
+  .alchoholProductsImageBox .img-box img:first-child{
+    width: 100% !important;
+    height: 100% !important;
   }
 
   .alchoholProductsImageBox .img-box img:nth-child(2) {
