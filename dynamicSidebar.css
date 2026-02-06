@@ -7,6 +7,10 @@
   --link-icons: #302215;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 a.phone-number {
   margin-right: 6px;
 }
@@ -288,7 +292,7 @@ a.phone-number {
 
   .mainContentPart {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 .6rem;
+    padding: 0 .7rem !important;
     gap: .7rem !important;
   }
 

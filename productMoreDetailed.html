@@ -24,6 +24,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
@@ -108,23 +109,23 @@
     </div>
   </div>
   <section id="main">
-    <div class="productType">
-      <div class="reverseIcon">
-        <a href="">
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-      </div>
-      <div class="topTitle">
-        <h2>PRODUCTS</h2>
-        <div class="circle-line">
-          <div class="line"></div>
-          <div class="circle"></div>
-          <div class="line"></div>
-        </div>
-        <h2 class="cakeType">CAKE</h2>
-      </div>
-    </div>
     <div class="detaiContent">
+      <div class="productType">
+        <div class="reverseIcon">
+          <a href="cakes.html">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+        <div class="topTitle">
+          <h2>PRODUCTS</h2>
+          <div class="circle-line">
+            <div class="line"></div>
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+          <h2 class="cakeType">CAKE</h2>
+        </div>
+      </div>
       <div class="detailBox">
         <div class="swiper paginationContent">
           <div class="swiper-wrapper">
@@ -152,6 +153,7 @@
 
         <div class="productDetailInfo">
           <div>
+            
             <h2 class="product-name">Noisette</h2>
             <p class="product-price">
               <span>PRICE</span>
@@ -313,12 +315,42 @@
   <script src="dynamicSidebar.js"></script>
   <script src="languageSelection.js"></script>
   <script src="productsUnderElements.js"></script>
-  <script src="moreDetailsData.js"></script>
   <script>
     const navbar = document.querySelector(".navbar-part");
     const main = document.querySelector("section#main");
 
     main.style.paddingTop = navbar.offsetHeight + "px";
+
+
+    const pageSwiper = new Swiper(".paginationContent", {
+      loop: true,
+      speed: 800,
+      centeredSlides: true,
+      spaceBetween: 5,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    })
+    // document.querySelector(".shareBtn").addEventListener("click", function () {
+    //   const title = document.querySelector(".product-name").innerText;
+    //   const desc = document.querySelector(".product-ingredients p").innerText;
+    //   const activeImg = document.querySelector(".swiper-slide img");
+    //   const img = activeImg ? activeImg.src : "";
+
+    //   const sharePageUrl = `https://Azza.az/share.html?title=${encodeURIComponent(title)}&desc=${encodeURIComponent(desc)}&img=${encodeURIComponent(img)}`;
+
+    //   const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(sharePageUrl)}`;
+
+    //   window.open(fbUrl, "_blank", "width=600,height=500");
+    // });
+
   </script>
 </body>
 
