@@ -212,10 +212,148 @@ const moreDetailData = [
         "price": 7.90,
         "ingredients": "vanilla, canned cherry, water, cherry jelly, cocoa, starch, butter, milk, flour, powdered sugar, baking powder, vegetable cream, cherry juice, salt, coconut shavings, eggs.",
         "size": ["5 person"],
-        "images": ["rollwithcherry1.jpg","rollwithcherry2.jpg"]
+        "images": ["rollwithcherry1.jpg", "rollwithcherry2.jpg"]
       }
     ]
 
+  },
+  {
+    "product": "ECLAIRS",
+    "ProductInfo": [
+      {
+        "id": 26,
+        "name": "Eclair Chocolate",
+        "price": 1.40,
+        "ingredients": "vanilla, water, gelatin, white jelly, cocoa, starch, butter, milk, flour, sugar, vegetable cream, salt, black chocolate, eggs.",
+        "size": ["Price of one piece."],
+        "images": ["eclairswithchocolate1.jpg"]
+      },
+      {
+        "id": 27,
+        "name": "Eclair Tiramisu",
+        "price": 1.40,
+        "ingredients": "vanilla, water, gelatin, white jelly, jelly, coffee, natural dye, butter, milk, flour, sugar powder, vegetable cream, salt, mascarpone cheese, eggs.",
+        "size": ["Price o one piece."],
+        "images": ["eclairtiramisu.jpg", "eclairtiramisu2.jpg"]
+      },
+      {
+        "id": 28,
+        "name": "Eclair Caramel",
+        "price": 1.40,
+        "ingredients": "flour, butter, eggs, sugar, milk, vanilla, starch, vegetable cream, salt, water.",
+        "size": ["Price o one piece."],
+        "images": ["eclaircaramel1.jpg"]
+      },
+      {
+        "id": 29,
+        "name": "Eclair Shu",
+        "price": 1.40,
+        "ingredients": "flour, butter, eggs, sugar, milk, vanilla, vegetable cream, starch, salt, water.",
+        "size": ["Price o one piece."],
+        "images": ["eclairshu1.jpg", "eclairshu2.jpg", "eclairshu3.jpg"]
+      },
+      {
+        "id": 30,
+        "name": "Eclair Mini Mix",
+        "price": 5.00,
+        "ingredients": "flour, butter, eggs, sugar powder, milk, milk chocolate, white chocolate, black chocolate, mascarpone cheese, vanilla powder, starch, vegetable based cream, salt, water.",
+        "size": ["215 gr"],
+        "images": ["eclairminimix1.jpg", "eclairminimix2.jpg"]
+      },
+      {
+        "id": 31,
+        "name": "Eclair Strawberry",
+        "price": 1.40,
+        "ingredients": "flour, butter, eggs, sugar powder, milk, white chocolate, vegetable cream, corn starch, strawberry flavour, natural food coloring, vanilla powder, glucose, jelly, salt, water.",
+        "size": ["Price for one piece"],
+        "images": ["eclairstrawberry1.jpg", "eclairstrawberry2.jpg"]
+      },
+    ]
+  },
+  {
+    "product": "COOKIES",
+    "ProductInfo": [
+      {
+        "id": 32,
+        "name": "Pryanik",
+        "price": 2.90,
+        "ingredients": "High-quality flour, powdered sugar, honey, eggs, butter, baking powder, soda, ground walnut, drinking water.",
+        "size": ["200 g"],
+        "images": ["pryanik1.jpg","pryanik2.jpg"]
+      },
+      {
+        "id": 33,
+        "name": "Cookie Amande",
+        "price": 3.70,
+        "ingredients": "almond, powdered sugar, egg, lemon, vanilla powder",
+        "size": ["200 g"],
+        "images": ["cookieamande.png"]
+      },
+      {
+        "id": 34,
+        "name": "Milk cookie",
+        "price":2.90,
+        "ingredients": "excellent quality wheat flour, milk, walnuts, almonds, butter, vanilla, baking powder",
+        "size": ["200 gr"],
+        "images": ["milkcookie1.jpg"]
+      },
+      {
+        "id": 35,
+        "name": "Cookie Butter",
+        "price": 3.50,
+        "ingredients": "excellent wheat flour, eggs, walnuts, almonds, butter, vanilla, salt",
+        "size": ["200 gr"],
+        "images": ["cookiebutter1.jpg", "cookiebutter2.jpg"]
+      },
+      {
+        "id": 36,
+        "name": "Macaroons",
+        "price": 6.90,
+        "ingredients": "almond, sugar, water, milk, butter, glucose, gelatine, coffee, natural dyes, coconut shavings, milk chocolate, black chocolate, eggs. Depending on the taste, flavors are added: a pineapple, orange, banana, pear, kiwi, coconut, nuts, pistachios.",
+        "size": ["Package (8 pieces) - 6.90 AZN"],
+        "images": ["macaroon1.jpg"]
+      },
+      {
+        "id": 37,
+        "name": "Cookies Walnut",
+        "price": 5.50,
+        "ingredients": "almonds, hazelnuts, cashews, walnuts, sugar, eggs",
+        "size": ["200 gr"],
+        "images": ["cookiewalnut1.jpg"]
+      },
+      {
+        "id": 38,
+        "name": "Nuts with boiled condensed milk",
+        "price": 5.70,
+        "ingredients": "vanilla, butter, boiled condensed milk, flour, granulated sugar, eggs.",
+        "size": ["320 gr"],
+        "images": ["nutswithboiledcondensedmilk1.jpg","nutswithboiledcondensedmilk2.jpg"]
+      },
+      {
+        "id": 39,
+        "name": "Cookies Almonds and cocoa",
+        "price": 3.50,
+        "ingredients": "flour, eggs, powdered sugar, cocoa, almonds, baking powder, vanilla powder.",
+        "size": ["160 gr"],
+        "images": ["cookiesalmondsandcocoa1.jpg"]
+      },
+        {
+        "id": 40,
+        "name": "Cookies Almond",
+        "price": 4.20,
+        "ingredients": "vanilla, flour, almond, sugar, baking powder, eggs.",
+        "size": ["160 gr"],
+        "images": ["cookiesalmond1.jpg","cookiesalmond2.jpg"]
+      },
+       {
+        "id": 41,
+        "name": "Cookies almond and nut",
+        "price": 4.70,
+        "ingredients": "flour, egg white, sugar powder, walnuts, almonds, honey.",
+        "size": ["200  g"],
+        "images": ["cookiesalmondandnut.jpg"]
+      },
+    ]
   }
 ]
 

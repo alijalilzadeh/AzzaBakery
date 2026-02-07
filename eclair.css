@@ -69,13 +69,13 @@
   justify-content: center;
 }
 
-.eclairsImgBoxes .eclairImgBox span .cookieType{
+.eclairsImgBoxes .eclairImgBox span .cakeType{
   font-size: 12px;
   color: #5a5757;
   font-weight: 700;
 }
 
-.eclairsImgBoxes .eclairImgBox span .cookiename{
+.eclairsImgBoxes .eclairImgBox span .cakename{
   font-size: 15px;
   color: var(--brown-color);
   font-weight: 700;
