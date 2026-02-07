@@ -67,13 +67,13 @@
   justify-content: center;
 }
 
-.dessertsImgBoxes .dessertImgBox span .cookieType {
+.dessertsImgBoxes .dessertImgBox span .cakeType {
   font-size: 12px;
   color: #5a5757;
   font-weight: 700;
 }
 
-.dessertsImgBoxes .dessertImgBox span .cookiename {
+.dessertsImgBoxes .dessertImgBox span .cakename {
   font-size: 15px;
   color: var(--brown-color);
   font-weight: 700;

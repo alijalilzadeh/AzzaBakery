@@ -584,7 +584,7 @@ const moreDetailData = [
         "size": ["Price for one piece."],
         "images": ["pattieswithchicken1.jpg", "pattieswithchicken2.jpg"]
       },
-       {
+      {
         "id": 69,
         "name": "Simit",
         "price": 0.90,
@@ -592,16 +592,312 @@ const moreDetailData = [
         "size": ["Price for one piece."],
         "images": ["simit.jpg"]
       },
-       {
+      {
         "id": 70,
         "name": "Qoqal sapma",
         "price": 0.90,
         "ingredients": "water, sour cream, sunflower oil, butter, milk, flour, sugar, pepper, turmeric, baking powder, salt, eggs, sesame.",
         "size": ["Price for one piece."],
-        "images": ["qoqalsapma1.jpg","qoqalsapma2.jpg"]
+        "images": ["qoqalsapma1.jpg", "qoqalsapma2.jpg"]
+      },
+    ]
+  },
+  {
+    "product": "NATIONAL",
+    "ProductInfo": [
+      {
+        "id": 71,
+        "name": "Kata Karabagh",
+        "price": 3.50,
+        "ingredients": "flour, eggs, butter, powdered sugar, milk, yeast, carrots, vanilla powder",
+        "size": ["Price for one piece."],
+        "images": ["katakarabagh1.jpg", "katakarabagh2.jpg", "katakarabagh3.jpg"]
+      },
+      {
+        "id": 72,
+        "name": "Shakarbura",
+        "price": 8.00,
+        "ingredients": "butter, vanilla, sour cream, sunflower oil, milk, flour, hazelnuts, sugar , cardamom, vegetable cream, soured milk, vinegar, eggs.",
+        "size": ["250 gr"],
+        "images": ["shakarbura1.jpg", "shakarbura2.jpg"]
+      },
+      {
+        "id": 73,
+        "name": "Baklava Baku",
+        "price": 8.00,
+        "ingredients": "water, butter, honey, flour, walnuts, hazelnuts, sugar, cardamom, saffron, sour cream, lemon acid, eggs.",
+        "size": ["300 gr"],
+        "images": ["baklavabaku.jpg"]
+      },
+      {
+        "id": 74,
+        "name": "Kata Almond",
+        "price": 4.50,
+        "ingredients": "soured milk, butter, flour, almond, hazelnut, sugar, cardamom, baking powder, vinegar, eggs.",
+        "size": ["230 gr"],
+        "images": ["kataalmond1.jpg", "kataalmond2.jpg"]
+      },
+      {
+        "id": 75,
+        "name": "Mutaki with walnut",
+        "price": 4.70,
+        "ingredients": "Ingredients: dough with sour cream, hazelnuts, walnuts, sugar.",
+        "size": ["220 gr"],
+        "images": ["mutakiwithwalnut.jpg"]
+      },
+      {
+        "id": 76,
+        "name": "Mutaki with almonds",
+        "price": 4.70,
+        "ingredients": "flour, butter, eggs, almond, hazelnut, soured milk, sugar, cardamom, vanilla.",
+        "size": ["220 gr"],
+        "images": ["mutakiwithwalnut.jpg"]
+      }
+    ]
+  },
+  {
+    "product": "AZZA CHOCOLATE",
+    "ProductInfo": [
+      {
+        "id": 77,
+        "name": "Dubai chocolate",
+        "price": 6.40,
+        "ingredients": "Sunflower oil, butter, pistachios, powdered sugar, white chocolate, salt, tel kadayif, milk chocolate, dark chocolate",
+        "size": ["150 g"],
+        "images": ["dubaichocolate1.jpg", "dubaichocolate2.jpg", "dubaichocolate3.jpg"]
+      },
+      {
+        "id": 78,
+        "name": "Milk dragee with almonds and powdered sugar",
+        "price": 5.90,
+        "ingredients": "Milk chocolate, cocoa butter, almond kernels, powdered sugar",
+        "size": ["200 g"],
+        "images": ["milk-dragee-with-almonds-and-powdered-sugar.jpg"]
+      },
+      {
+        "id": 79,
+        "name": "Milk dragee with almonds and cocoa",
+        "price": 5.90,
+        "ingredients": "Milk chocolate, cocoa butter, almond kernels, powdered sugar, cocoa powder",
+        "size": ["200 g"],
+        "images": ["milk-dragee-with-almonds-and-cocoa1.jpg", "milk-dragee-with-almonds-and-cocoa2.jpg"]
+      },
+      {
+        "id": 80,
+        "name": "White chocolate with almonds",
+        "price": 5.90,
+        "ingredients": "white chocolate drops, almonds, milk chocolate drops",
+        "size": ["200 gr"],
+        "images": ["white-chocolate-with-almonds1.jpg", "white-chocolate-with-almonds2.jpg"]
+      },
+      {
+        "id": 81,
+        "name": "Brownie",
+        "price": 5.90,
+        "ingredients": "milk and dark chocolate particles, powdered sugar, butter, eggs, cream, fine flour, hazelnuts, walnuts, pistachios, vanilla, cocoa butter, salt",
+        "size": ["200 gr"],
+        "images": ["brownie.jpg"]
+      },
+      {
+        "id": 82,
+        "name": "Milk chocolate with almonds",
+        "price": 5.90,
+        "ingredients": "milk chocolate drops, almond-nut drops, milk chocolate drops, cocoa butter.",
+        "size": ["200 gr"],
+        "images": ["milk-chocolate-with-almonds1.jpg", "milk-chocolate-with-almonds2.jpg"]
+      },
+      {
+        "id": 83,
+        "name": "Milk chocolate with hazelnuts",
+        "price": 5.90,
+        "ingredients": "Milky drops chocolate, nuts, cocoa butter, black drops chocolate.",
+        "size": ["200 gr"],
+        "images": ["milk-chocolate-with-hazelnuts.jpg"]
+      },
+      {
+        "id": 84,
+        "name": "Tviks",
+        "price": 5.90,
+        "ingredients": "milk drops chocolate, condensed milk, high-quality flour, eggs, walnuts, almonds, sugar powder, drinking water, sugar powder, vanilla, cocoa butter",
+        "size": ["200 gr"],
+        "images": ["milk-chocolate-with-almonds1.jpg", "milk-chocolate-with-almonds2.jpg"]
+      },
+      {
+        "id": 85,
+        "name": "Milk chocolate with hazelnuts",
+        "price": 5.90,
+        "ingredients": "Milky drops chocolate, nuts, cocoa butter, black drops chocolate.",
+        "size": ["200 gr"],
+        "images": ["tviks1.jpg", "tviks2.jpg", "tviks3.jpg"]
+      },
+      {
+        "id": 86,
+        "name": "Azza milk chocolate with almonds, hazelnuts and raisins",
+        "price": 5.90,
+        "ingredients": "Milky drops chocolate, cocoa butter, nuts, almonds, raisins",
+        "size": ["200 gr"],
+        "images": ["azza-milk-chocolate-with-almonds-hazelnuts-raisins1.jpg", "azza-milk-chocolate-with-almonds-hazelnuts-raisins2.jpg"]
+      }
+    ]
+  },
+  {
+    "product": "DESSERT",
+    "ProductInfo": [
+      {
+        "id": 87,
+        "name": "Ice cream with cherries",
+        "price": 8.90,
+        "ingredients": "Frozen cherry, milk, pectin, powdered sugar, animal cream, additive for the basis of ice cream",
+        "size": ["640 g"],
+        "images": ["icecream-with-cherries.jpg"]
+      },
+      {
+        "id": 88,
+        "name": "Ice cream with cherry",
+        "price": 2.90,
+        "ingredients": "Frozen cherry, milk, pectin, powdered sugar, animal cream, additive for the basis of ice cream",
+        "size": ["120 g"],
+        "images": ["icecream-with-cherries2.jpg"]
+      },
+      {
+        "id": 89,
+        "name": "Ice Cream with Pistachios (big)",
+        "price": 11.90,
+        "ingredients": "Milk, cream of animal origin, powdered sugar, pistachios, base additive for ice cream.",
+        "size": ["640 gr"],
+        "images": ["icecream-with-pistachios.jpg"]
+      },
+      {
+        "id": 90,
+        "name": "Dubai Dessert",
+        "price": 3.50,
+        "ingredients": "Vanilla powder, drinking water, glucose, corn starch, sunflower oil, butter, high-quality flour, pistachios, powdered sugar, icing sugar, plant-based cream, salt, kadayif, white chocolate, milk chocolate, dark chocolate, eggs",
+        "size": ["400 gr"],
+        "images": ["dubai-dessert1.jpg", "dubai-dessert2.jpg"]
+      },
+      {
+        "id": 91,
+        "name": "Ice cream with pistachios (small)",
+        "price": 2.90,
+        "ingredients": "Milk, cream of animal origin, powdered sugar, pistachios, base additive for ice cream.",
+        "size": ["120 gr"],
+        "images": ["icecream-with-pistachios2.jpg"]
+      },
+      {
+        "id": 92,
+        "name": "Nero ice cream (small)",
+        "price": 2.90,
+        "ingredients": "Milk, natural milk cream, sugar, cocoa, dextrose, sweeteners.",
+        "size": ["120 gr"],
+        "images": ["nero-icecream.jpg"]
+      },
+      {
+        "id": 93,
+        "name": "Nero ice cream (big)",
+        "price": 11.90,
+        "ingredients": "Milk, natural milk cream, sugar, cocoa, dextrose, sweeteners.",
+        "size": ["640 g"],
+        "images": ["nero-icecream2.jpg"]
+      },
+      {
+        "id": 94,
+        "name": "Dessert banana and chocolate",
+        "price": 2.50,
+        "ingredients": "water, milk, banana flavor, whole grain flour, egg, dark chocolate, milk chocolate, gelatin, vanilla powder, whole grain flour, almond kernels, baking powder, powdered sugar, vanilla powder, emulsifier, vegetable-based cream",
+        "size": ["200 gr"],
+        "images": ["dessert-banana-and-chocolate1.jpg", "dessert-banana-and-chocolate2.jpg", "dessert-banana-and-chocolate3.jpg", "dessert-banana-and-chocolate4.jpg"]
+      },
+      {
+        "id": 95,
+        "name": "Capitol dessert",
+        "price": 2.50,
+        "ingredients": "canned pineapple, white biscuit crumbs, vanilla powder, water, raspberry jam, gelatin, simple jelly, milk, whole wheat flour, canned peaches, powdered sugar, baking powder, plant-based cream, emulsifier, egg",
+        "size": ["200 gr"],
+        "images": ["capitol-dessert1.jpg", "capitol-dessert1.jpg", "capitol-dessert1.jpg", "capitol-dessert4.jpg"]
+      },
+      {
+        "id": 96,
+        "name": "Mix berry dessert",
+        "price": 2.50,
+        "ingredients": "water, blackcurrant jam, butter, fine flour, cottage cheese, plant-based cream, salt, powdered sugar, powdered sugar",
+        "size": ["200 gr"],
+        "images": ["mixberry-dessert1.jpg", "mixberry-dessert2.jpg", "mixberry-dessert3.jpg", "mixberry-dessert4.jpg"]
+      },
+      {
+        "id": 97,
+        "name": "Truffle Dessert",
+        "price": 2.50,
+        "ingredients": "plant-based cream, condensed milk, powdered sugar, drinking water, eggs, butter, fine flour, cocoa, vanilla powder, powdered sugar, baking powder, emulsifier",
+        "size": ["200 gr"],
+        "images": ["truffle-dessert1.jpg", "truffle-dessert2.jpg", "truffle-dessert3.jpg"]
+      },
+      {
+        "id": 98,
+        "name": "Strawberry ice cream",
+        "price": 9.90,
+        "ingredients": "Milk, whole natural cream, sugar, strawberry additives for ice cream",
+        "size": ["640 gr"],
+        "images": ["strawberry-icecream.jpeg"]
+      },
+      {
+        "id": 99,
+        "name": "Chocolate ice cream",
+        "price": 8.90,
+        "ingredients": "Milk, whole natural cream, sugar, chocolate additives for ice cream.",
+        "size": ["640 gr"],
+        "images": ["chocolate-icecream.jpg"]
+      },
+      {
+        "id": 100,
+        "name": "Ice cream vanilla",
+        "price": 8.90,
+        "ingredients": "Milk, whole natural milk cream, sugar, vanilla flavorings for ice cream",
+        "size": ["640 gr"],
+        "images": ["icecream-vanilla.jpg"]
+      },
+      {
+        "id": 101,
+        "name": "Ice cream vanilla small",
+        "price": 2.90,
+        "ingredients": "Milk, whole natural milk cream, sugar, vanilla flavorings for ice cream",
+        "size": ["120 gr"],
+        "images": ["icecream-vanilla-small.jpg"]
+      },
+      {
+        "id": 102,
+        "name": "Chocolate ice cream small",
+        "price": 2.90,
+        "ingredients": "Milk, whole natural cream, sugar, chocolate additives for ice cream.",
+        "size": ["120 gr"],
+        "images": ["chocolate-icecream-small.jpg"]
+      },
+      {
+        "id": 103,
+        "name": "Strawberry ice cream small",
+        "price": 2.90,
+        "ingredients": "Milk, whole natural cream, sugar, strawberry additives for ice cream",
+        "size": ["120 gr"],
+        "images": ["strawberry-icecream-small.jpg"]
+      },
+      {
+        "id": 104,
+        "name": "Brownie Dessert",
+        "price": 2.50,
+        "ingredients": "cream, particles of milk and dark chocolate, eggs, milk, powdered sugar, butter, flour, nuts, drinking water, vanilla, gelatin",
+        "size": ["120 gr"],
+        "images": ["brownie-dessert1.jpg", "brownie-dessert2.jpg", "brownie-dessert3.jpg"]
+      },
+      {
+        "id": 105,
+        "name": "Tiramisu dessert",
+        "price": 2.50,
+        "ingredients": "drinking water, powdered sugar, cream, eggs, mascarpone cheese, premium flour, coffee, cocoa, corn starch, vanilla, gelatin",
+        "size": ["120 gr"],
+        "images": ["tiramisu-dessert1.jpg","tiramisu-dessert2.jpg","tiramisu-dessert3.jpg"]
       },
     ]
   }
+
 
 ]
 

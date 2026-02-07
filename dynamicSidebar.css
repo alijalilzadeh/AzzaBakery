@@ -221,7 +221,10 @@ a.phone-number {
   color: var(--brown-color);
   padding: 0 2rem !important;
 }
+.importedGroceryBox:nth-of-type(even){
+  flex-direction: row-reverse !important;
 
+}
 /* New Responsive navbar */
 .newResponsiveNavbarPart .hamburgerIcon i {
   background-color: #F6D119;

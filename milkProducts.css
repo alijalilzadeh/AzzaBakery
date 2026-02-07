@@ -203,7 +203,7 @@
 
   .milkProductsImageBoxes .milkProductsImageBox {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     height: auto;
     gap: 2rem;
     padding: 2rem 1rem;
@@ -211,7 +211,6 @@
 
   .milkProductsImageBoxes .milkProductsImageBox .descriptionPart {
     width: 100%;
-    text-align: center;
     align-items: center;
   }
 

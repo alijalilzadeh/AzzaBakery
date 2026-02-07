@@ -67,13 +67,13 @@
   justify-content: center;
 }
 
-.azzaChocolatesImgBoxes .azzaChocolateImgBox span .cookieType {
+.azzaChocolatesImgBoxes .azzaChocolateImgBox span .cakeType {
   font-size: 12px;
   color: #5a5757;
   font-weight: 700;
 }
 
-.azzaChocolatesImgBoxes .azzaChocolateImgBox span .cookiename {
+.azzaChocolatesImgBoxes .azzaChocolateImgBox span .cakename {
   font-size: 15px;
   color: var(--brown-color);
   font-weight: 700;
