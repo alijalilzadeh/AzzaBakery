@@ -279,7 +279,7 @@ const moreDetailData = [
         "price": 2.90,
         "ingredients": "High-quality flour, powdered sugar, honey, eggs, butter, baking powder, soda, ground walnut, drinking water.",
         "size": ["200 g"],
-        "images": ["pryanik1.jpg","pryanik2.jpg"]
+        "images": ["pryanik1.jpg", "pryanik2.jpg"]
       },
       {
         "id": 33,
@@ -292,7 +292,7 @@ const moreDetailData = [
       {
         "id": 34,
         "name": "Milk cookie",
-        "price":2.90,
+        "price": 2.90,
         "ingredients": "excellent quality wheat flour, milk, walnuts, almonds, butter, vanilla, baking powder",
         "size": ["200 gr"],
         "images": ["milkcookie1.jpg"]
@@ -327,7 +327,7 @@ const moreDetailData = [
         "price": 5.70,
         "ingredients": "vanilla, butter, boiled condensed milk, flour, granulated sugar, eggs.",
         "size": ["320 gr"],
-        "images": ["nutswithboiledcondensedmilk1.jpg","nutswithboiledcondensedmilk2.jpg"]
+        "images": ["nutswithboiledcondensedmilk1.jpg", "nutswithboiledcondensedmilk2.jpg"]
       },
       {
         "id": 39,
@@ -337,15 +337,15 @@ const moreDetailData = [
         "size": ["160 gr"],
         "images": ["cookiesalmondsandcocoa1.jpg"]
       },
-        {
+      {
         "id": 40,
         "name": "Cookies Almond",
         "price": 4.20,
         "ingredients": "vanilla, flour, almond, sugar, baking powder, eggs.",
         "size": ["160 gr"],
-        "images": ["cookiesalmond1.jpg","cookiesalmond2.jpg"]
+        "images": ["cookiesalmond1.jpg", "cookiesalmond2.jpg"]
       },
-       {
+      {
         "id": 41,
         "name": "Cookies almond and nut",
         "price": 4.70,
@@ -354,7 +354,255 @@ const moreDetailData = [
         "images": ["cookiesalmondandnut.jpg"]
       },
     ]
+  },
+  {
+    "product": "NUTS",
+    "ProductInfo": [
+      {
+        "id": 42,
+        "name": "Mixed Nuts",
+        "price": 5.90,
+        "ingredients": "Mixed Nuts",
+        "size": ["150 gr"],
+        "images": ["mixednuts.jpg"]
+      },
+      {
+        "id": 43,
+        "name": "Walnuts",
+        "price": 4.90,
+        "ingredients": "Walnuts",
+        "size": ["150 gr"],
+        "images": ["walnuts.jpg"]
+      },
+      {
+        "id": 44,
+        "name": "Roasted Hazelnuts",
+        "price": 6.90,
+        "ingredients": "Roasted Hazelnuts",
+        "size": ["150 gr"],
+        "images": ["roastedhazelnuts.jpg"]
+      },
+      {
+        "id": 45,
+        "name": "Roasted almonds",
+        "price": 4.90,
+        "ingredients": "Roasted almonds",
+        "size": ["150 gr"],
+        "images": ["roastedalmonds.jpg"]
+      }
+    ]
+  },
+  {
+    "product": "BREAD PRODUCT",
+    "ProductInfo": [
+      {
+        "id": 46,
+        "name": "Bran Bread Small (grains and cereals)",
+        "price": 0.90,
+        "ingredients": "whole grain flour, bran flour, powdered sugar, salt, yeast, 100% Italian olive oil, drinking water, pumpkin seeds, flax seeds, sunflower seeds",
+        "size": ["Price per piece"],
+        "images": ["branbread1.png", "branbread2.png"]
+      },
+      {
+        "id": 47,
+        "name": "Whole Wheat",
+        "price": 0.90,
+        "ingredients": "whole wheat flour, bran flour, powdered sugar, salt, yeast, 100% Italian olive oil, drinking water",
+        "size": ["Price per piece"],
+        "images": ["wholewheat1.png", "wholewheat2.png"]
+      },
+      {
+        "id": 48,
+        "name": "Bread French Baguette",
+        "price": 1.00,
+        "ingredients": "Whole wheat flour, salt, butter, drinking water, yeast, powdered sugar, milk",
+        "size": ["Price for one piece"],
+        "images": ["breadfrenchbaguette1.png", "breadfrenchbaguette2.png"]
+      },
+      {
+        "id": 49,
+        "name": "German bread",
+        "price": 1.00,
+        "ingredients": "Wheat flour of excellent quality, water, Sapore Othello, salt, yeast, butter, drinking water.",
+        "size": ["Price for one piece."],
+        "images": ["germanbread1.png", "germanbread2.png"]
+      },
+      {
+        "id": 50,
+        "name": "Russian black bread",
+        "price": 1.00,
+        "ingredients": "Excellent varieties of wheat flour, rye flour, sugar powder, salt, yeast, sunflower oil, honey, drinking water",
+        "size": ["Price for one piece."],
+        "images": ["russianblackbread1.png", "russianblackbread2.png"]
+      },
+      {
+        "id": 51,
+        "name": "Borodinsky bread",
+        "price": 1.00,
+        "ingredients": "Excellent wheat flour, rye flour, sugar powder, salt, drinking water, yeast, sunflower oil, bahmez, coriander seeds",
+        "size": ["Price for one piece."],
+        "images": ["borodinksybread1.png", "borodinksbread2.png"]
+      },
+      {
+        "id": 52,
+        "name": "Georgian bread",
+        "price": 1.00,
+        "ingredients": "Excellent varieties of wheat flour, sugar powder, salt, yeast, olive oil, drinking water",
+        "size": ["Price for one piece."],
+        "images": ["georgianbread1.png", "georgianbread2.png"]
+      },
+      {
+        "id": 53,
+        "name": "French baguette",
+        "price": 0.80,
+        "ingredients": "Excellent wheat flour, salt, drinking water, yeast",
+        "size": ["Price for one piece."],
+        "images": ["frenchbaguette1.png", "frenchbaguette2.jpg"]
+      },
+    ]
+  },
+  {
+    "product": "BAKERY",
+    "ProductInfo": [
+      {
+        "id": 54,
+        "name": "French Bun",
+        "price": 0.90,
+        "ingredients": "excellent wheat flour, butter, sunflower oil, milk, powdered sugar, eggs, yeast, vanilla powder, salt, drinking water, corn starch, raisins, cinnamon, almond powder",
+        "size": ["Price for one piece."],
+        "images": ["frenchbun1.jpg", "frenchbun2.jpg"]
+      },
+      {
+        "id": 55,
+        "name": "Bun with cottage cheese",
+        "price": 0.90,
+        "ingredients": "excellent wheat flour, butter, sunflower oil, milk, powdered sugar, eggs, yeast, cottage cheese, vanilla powder, salt, drinking water, raisins",
+        "size": ["Price for one piece"],
+        "images": ["bunwithcottagecheese1.jpg", "bunwithcottagecheese2.jpg"]
+      },
+      {
+        "id": 56,
+        "name": "Bun with walnut",
+        "price": 0.90,
+        "ingredients": "excellent wheat flour, butter, sunflower oil, milk, powdered sugar, eggs, yeast, vanilla powder, salt, drinking water, walnut kernels, cardamom",
+        "size": ["Price for one piece."],
+        "images": ["bunwithwalnut1.jpg", "bunwithwalnut2.jpg"]
+      },
+      {
+        "id": 57,
+        "name": "Bun heart",
+        "price": 0.70,
+        "ingredients": "excellent wheat flour, butter, sunflower oil, milk, powdered sugar, eggs, yeast, vanilla powder, salt, drinking water",
+        "size": ["Price for one piece."],
+        "images": ["bunheart.jpg"]
+      },
+      {
+        "id": 58,
+        "name": "Grissini",
+        "price": 1.90,
+        "ingredients": "High-quality flour, sesame seeds, salt, yeast, sunflower oil, baking powder, drinking water.",
+        "size": ["160 g"],
+        "images": ["grissini.jpg"]
+      },
+      {
+        "id": 59,
+        "name": "Grissini with sunflower seeds",
+        "price": 1.90,
+        "ingredients": "Drinking water, dry rye malt, yeast, sunflower oil, high-quality flour, sunflower seeds, salt",
+        "size": ["160 g"],
+        "images": ["grissiniwithsunflowerseeds.jpg"]
+      },
+      {
+        "id": 60,
+        "name": "Рot dog with halal sausage",
+        "price": 1.30,
+        "ingredients": "whole wheat flour, butter, olive oil, sunflower oil, milk, sausage, salt, powdered sugar, sesame eggs, pepper, drinking water, yeast",
+        "size": ["115 gr"],
+        "images": ["potdogwithhalalsausage1.jpg", "potdogwithhalalsausage2.jpg"]
+      },
+      {
+        "id": 61,
+        "name": "Croissant",
+        "price": 0.90,
+        "ingredients": "excellent wheat flour, butter, milk, powdered sugar, eggs, yeast, vanilla powder, salt, drinking water",
+        "size": ["Price for one piece."],
+        "images": ["croissant1.jpg", "croissant1.jpg"]
+      },
+      {
+        "id": 62,
+        "name": "Croissant with cherry",
+        "price": 0.90,
+        "ingredients": "whole grain flour, powdered sugar, butter, eggs, drinking water, milk, salt, yeast, frozen cherries, vanilla powder, corn starch",
+        "size": ["60 gr"],
+        "images": ["croissantwithcherry1.jpg", "croissantwithcherry2.jpg"]
+      },
+      {
+        "id": 63,
+        "name": "Croissant with chocolate",
+        "price": 1.20,
+        "ingredients": "wheat flour, powdered sugar, butter, eggs, drinking water, milk, salt, yeast, vanilla powder, milk chocolate",
+        "size": ["50 gr"],
+        "images": ["croissantwithchocolate1.jpg", "croissantwithchocolate2.jpg"]
+      },
+      {
+        "id": 64,
+        "name": "Muffin with raspberries",
+        "price": 1.50,
+        "ingredients": "whole wheat flour, butter, powdered sugar, eggs, raspberry jam, yogurt, cornstarch, vanilla, baking powder",
+        "size": ["80 gr"],
+        "images": ["muffinwithraspberries1.jpg", "muffinwithraspberries2.jpg"]
+      },
+      {
+        "id": 65,
+        "name": "Muffin with chocolate",
+        "price": 1.50,
+        "ingredients": "whole wheat flour, butter, powdered sugar, eggs, milk chocolate chunks, yogurt, cornstarch, vanilla, baking powder",
+        "size": ["80 gr"],
+        "images": ["muffinwithchocolate1.jpg", "muffinwithchocolate2.jpg"]
+      },
+      {
+        "id": 66,
+        "name": "Meat pies",
+        "price": 1.80,
+        "ingredients": "water, greens, olive oil, butter, flour, beef fillet, onion, sugar, barberry, pepper, cumin, baking powder, soured milk, salt, eggs.",
+        "size": ["Price for one piece."],
+        "images": ["meatpies1.jpg", "meatpies2.jpg", "meatpies3.jpg"]
+      },
+      {
+        "id": 67,
+        "name": "Patties with potatoes",
+        "price": 0.90,
+        "ingredients": "water, sesame, butter, flour, mashed potatoes, sugar, pepper, baking powder, soured milk, salt, eggs.",
+        "size": ["Price for one piece."],
+        "images": ["pattieswithpotatoes1.jpg", "pattieswithpotatoes2.jpg"]
+      },
+      {
+        "id": 68,
+        "name": "Patties with chicken",
+        "price": 1.20,
+        "ingredients": "water, olive oil, butter, flour, chicken fillet, onion, sugar powder, barberry, pepper, turmeric, baking powder, soured milk, salt, eggs, sesame, cumin.",
+        "size": ["Price for one piece."],
+        "images": ["pattieswithchicken1.jpg", "pattieswithchicken2.jpg"]
+      },
+       {
+        "id": 69,
+        "name": "Simit",
+        "price": 0.90,
+        "ingredients": "excellent wheat flour, butter, sunflower oil, milk, powdered sugar, eggs, pekmez, yeast, sesame, salt, drinking water",
+        "size": ["Price for one piece."],
+        "images": ["simit.jpg"]
+      },
+       {
+        "id": 70,
+        "name": "Qoqal sapma",
+        "price": 0.90,
+        "ingredients": "water, sour cream, sunflower oil, butter, milk, flour, sugar, pepper, turmeric, baking powder, salt, eggs, sesame.",
+        "size": ["Price for one piece."],
+        "images": ["qoqalsapma1.jpg","qoqalsapma2.jpg"]
+      },
+    ]
   }
+
 ]
 
 
@@ -368,10 +616,9 @@ moreDetailBoxes.forEach(link => {
     const productBox = link.closest(".productBox");
     const productName = productBox.querySelector(".cakename").innerText;
     const productType = productBox.querySelector(".cakeType").innerText;
+    if (bannerText) bannerText.style.display = "none";
 
-    bannerText.style.display = "none";
     const categoryData = moreDetailData.find(category => category.product === productType);
-
     const productData = categoryData["ProductInfo"].find(
       item => item.name.toLowerCase() === productName.toLowerCase()
     );

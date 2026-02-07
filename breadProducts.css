@@ -140,13 +140,13 @@
   object-fit: cover;
 }
 
-.breadImgBoxes .breadImgBox span .breadType{
+.breadImgBoxes .breadImgBox span .cakeType{
   font-size: 12px;
   color: #5a5757;
   font-weight: 700;
 }
 
-.breadImgBoxes .breadImgBox span .breadname{
+.breadImgBoxes .breadImgBox span .cakename{
   font-size: 15px;
   color: var(--brown-color);
   font-weight: 700;
