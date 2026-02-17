@@ -7,7 +7,7 @@
   --link-icons: #302215;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -221,10 +221,12 @@ a.phone-number {
   color: var(--brown-color);
   padding: 0 2rem !important;
 }
-.importedGroceryBox:nth-of-type(even){
+
+.importedGroceryBox:nth-of-type(even) {
   flex-direction: row-reverse !important;
 
 }
+
 /* New Responsive navbar */
 .newResponsiveNavbarPart .hamburgerIcon i {
   background-color: #F6D119;
@@ -238,6 +240,10 @@ a.phone-number {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
+}
+
+.productDetailInfo .size-value {
+  font-size: 14px !important;
 }
 
 /* Responsive codes */
@@ -341,6 +347,10 @@ a.phone-number {
 }
 
 @media (max-width: 480px) {
+  .productDetailInfo .size-value {
+    font-size: 14px !important;
+  }
+
   .navbar-part .navbar-left span {
     display: flex;
     align-items: center;
